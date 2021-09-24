@@ -1,0 +1,1679 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./images/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Restaurante Fast food!</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="enlaces" id="inicio"> 
+            
+            <div class="enlaces-principales">
+                <img src="./images/comidas.png" alt="Comidas" onclick="enlacesSuperiores('comida')">
+                <img src="./images/bebidas.png" alt="Bebidas" onclick="enlacesSuperiores('bebida')">
+                <img src="./images/postres.png" alt="Postres" onclick="enlacesSuperiores('postre')">
+            </div>
+            <div class="enlaces-secundarios">
+                <div class="enlaces-comidas" id="enlaces-comidas">
+                    <img src="./images/bocadillo-enlace.png" alt="Enlace Bocadillo" onclick="location.href='#bocadillos'">
+                    <img src="./images/pizza-enlace.png" alt="Enlace Pizza" onclick="location.href='#pizzas'">
+                    <img src="./images/hamburguesa-enlace.png" alt="Enlace Hamburguesa" onclick="location.href='#hamburguesas'">
+                </div>
+                <div class="enlaces-bebidas" id="enlaces-bebidas">
+                    <img src="./images/cerveza-enlace.png" alt="Enlace Cerveza" onclick="location.href='#cervezas'">
+                    <img src="./images/vino-enlace.png" alt="Enlace Vino" onclick="location.href='#vinos'">
+                    <img src="./images/otras-bebidas-enlace.png" alt="Enlace Otras Bebidas" onclick="location.href='#otras-bebidas'">
+                </div>
+                <div class="enlaces-postres" id="enlaces-postres">
+                    <img src="./images/helado-enlace.png" alt="Enlace Helado" onclick="location.href='#helados'">
+                    <img src="./images/cafe-enlace.png" alt="Enlace Café" onclick="location.href='#cafes'">
+                    <img src="./images/tarta-enlace.png" alt="Enlace Tarta" onclick="location.href='#tartas'">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="boton-subir-arriba" id="boton-subir-arriba">
+        <img src="./images/flecha-arriba.png" alt="Flecha Arriba" onclick="location.href='#inicio'">
+    </div>  
+    <div class="boton-revisar-pedido" id="boton-revisar-pedido">
+        <img src="./images/boton-pedido.png" alt="Boton Pedido" onclick="location.href='#precio-total-pedido'">
+    </div>  
+    
+    <section class="bocadillos" id="bocadillos">
+        <div class="titulo-seccion">
+            <img src="./images/bocadillo.png" alt="Bocadillo">
+            <span>Bocadillos</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto11">
+                        4 Huevos
+                    </div>
+                    <div class="descripcion-producto">
+                        Deliciosa tortilla de patatas casera
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto11', '4.95', 'Bocadillo')" onmousedown="aumentarImagen('anadir11')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir11">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto12">
+                        Búfalo
+                    </div>
+                    <div class="descripcion-producto">
+                        Bacon churruscadito en nuestra parrilla con queso cheddar
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">50€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto12', '3.50', 'Bocadillo')" onmousedown="aumentarImagen('anadir12')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir12">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto13">
+                        Huerta
+                    </div>
+                    <div class="descripcion-producto">
+                        Tomate, lechuga, zanahoria, cebolla y maíz
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">2.</span><span class="decimales">80€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto13', '2.80', 'Bocadillo')" onmousedown="aumentarImagen('anadir13')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir13">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto14">
+                        Chivito
+                    </div>
+                    <div class="descripcion-producto">
+                        Lomo, bacon, huevo frito, lechuga, tomate y mahonesa
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">80€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto14', '4.80', 'Bocadillo')" onmousedown="aumentarImagen('anadir14')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir14">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto15">
+                        Americano
+                    </div>
+                    <div class="descripcion-producto">
+                        Cerdo marinado, encurtidos y jalapeños
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">60€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto15', '4.60', 'Bocadillo')" onmousedown="aumentarImagen('anadir15')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir15">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto16">
+                        Philadelphia
+                    </div>
+                    <div class="descripcion-producto">
+                        Tiras de ternera a la plancha, cebolla y queso americano fundido
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">20€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto16', '4.20', 'Bocadillo')" onmousedown="aumentarImagen('anadir16')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir16">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto17">
+                        Bánh mì
+                    </div>
+                    <div class="descripcion-producto">
+                        Carnes marinadas, mahonesa, verduras encurtidas, chiles y cilantro
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">85€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto17', '3.85', 'Bocadillo')" onmousedown="aumentarImagen('anadir17')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir17">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto18">
+                        Kentucky 
+                    </div>
+                    <div class="descripcion-producto">
+                        Pechuga de pollo rebozada, ensalada de col y mahonesa picante
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">15€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto18', '4.15', 'Bocadillo')" onmousedown="aumentarImagen('anadir18')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir18">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto19">
+                        Reuben 
+                    </div>
+                    <div class="descripcion-producto">
+                        Carne enlatada, chucrut, queso suizo y salsa rusa
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto19', '3.95', 'Bocadillo')" onmousedown="aumentarImagen('anadir19')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir19">
+            </div>
+        </div>
+        <hr class="divisor-productos">        
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto110">
+                        Padrino 
+                    </div>
+                    <div class="descripcion-producto">
+                        Albóndigas, salsa marinara, mozzarella y parmesano
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto110', '3.75', 'Bocadillo')" onmousedown="aumentarImagen('anadir110')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir110">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="pizzas" id="pizzas">
+        <div class="titulo-seccion">
+            <img src="./images/pizza.png" alt="Pizza">
+            <span>Pizzas</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto21">
+                        Barbacoa
+                    </div>
+                    <div class="descripcion-producto">
+                        Salsa barbacoa, carne picada, cebolla y maíz
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">12.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto21', '12.95', 'Pizza')" onmousedown="aumentarImagen('anadir21')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir21">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto22">
+                        6 quesos
+                    </div>
+                    <div class="descripcion-producto">
+                        Selección de 6 quesos
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">10.</span><span class="decimales">50€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto22', '10.50', 'Pizza')" onmousedown="aumentarImagen('anadir22')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir22">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto23">
+                        Margarita
+                    </div>
+                    <div class="descripcion-producto">
+                        Salsa de tomate, mozzarella, albahaca, orégano y aceite de oliva
+                    </div>
+                </div>
+                <div class="precio-producto" >
+                    <span class="unidades">8.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto23', '8.75', 'Pizza')" onmousedown="aumentarImagen('anadir23')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir23">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto24">
+                        Napolitana
+                    </div>
+                    <div class="descripcion-producto">
+                        Salsa de tomate, mozzarella, anchoas, orégano, alcaparras y aceite de oliva
+                    </div>
+                </div>
+                <div class="precio-producto" >
+                    <span class="unidades">9.</span><span class="decimales">25€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto24', '9.25', 'Pizza')" onmousedown="aumentarImagen('anadir24')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir24">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto25">
+                        Carbonara
+                    </div>
+                    <div class="descripcion-producto">
+                        Salsa carbonara, cebolla, bacon y queso rallado
+                    </div>
+                </div>
+                <div class="precio-producto" >
+                    <span class="unidades">9.</span><span class="decimales">80€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto25', '9.80', 'Pizza')" onmousedown="aumentarImagen('anadir25')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir25">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto26">
+                        4 estaciones
+                    </div>
+                    <div class="descripcion-producto">
+                        Alcachofas, aceitunas con tomate y albahaca, champiñones y jamón serrano
+                    </div>
+                </div>
+                <div class="precio-producto" >
+                    <span class="unidades">9.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto26', '9.75', 'Pizza')" onmousedown="aumentarImagen('anadir26')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir26">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="hamburguesas" id="hamburguesas">
+        <div class="titulo-seccion">
+            <img src="./images/hamburguesa.png" alt="Pizza">
+            <span>Hamburguesas</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto31">
+                        Clásica
+                    </div>
+                    <div class="descripcion-producto">
+                        Carne roja, tomate, lechuga, cebolla y queso
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">50€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto31', '3.50', 'Hamburgesa')" onmousedown="aumentarImagen('anadir31')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir31">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto32">
+                        Campera
+                    </div>
+                    <div class="descripcion-producto">
+                        Filete de pollo empanado, lechuga y mahonesa
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">25€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto32', '4.25', 'Hamburgesa')" onmousedown="aumentarImagen('anadir32')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir32">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto33">
+                        Hawaii
+                    </div>
+                    <div class="descripcion-producto">
+                        Carne roja, jamón serrano y piña
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto33', '4.75', 'Hamburgesa')" onmousedown="aumentarImagen('anadir33')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir33">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto34">
+                        César
+                    </div>
+                    <div class="descripcion-producto">
+                        Carne de pollo, bacon, queso, lechuga, tomate y salsa césar
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto34', '3.95', 'Hamburgesa')" onmousedown="aumentarImagen('anadir34')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir34">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto35">
+                        Ibérica
+                    </div>
+                    <div class="descripcion-producto">
+                        Secreto ibérico, cebolla y queso manchego
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">50€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto35', '4.50', 'Hamburgesa')" onmousedown="aumentarImagen('anadir35')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir35">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto36">
+                        Oro verde
+                    </div>
+                    <div class="descripcion-producto">
+                        Carne de pollo, aguacate, rúcula y mozzarella
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">25€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto36', '4.25', 'Hamburgesa')" onmousedown="aumentarImagen('anadir36')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir36">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto37">
+                        Ranchera
+                    </div>
+                    <div class="descripcion-producto">
+                        Carne de pollo, huevos revueltos con espinacas y picadillo de aguacate
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">4.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto37', '4.75', 'Hamburgesa')" onmousedown="aumentarImagen('anadir37')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir37">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="cervezas" id="cervezas">
+        <div class="titulo-seccion">
+            <img src="./images/cerveza.png" alt="Cerveza">
+            <span>Cervezas</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto41">
+                        Estrella Galicia 1906
+                    </div>
+                    <div class="descripcion-producto">
+                        Sabor intenso a malta tostada
+                    </div>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-cerveza-1">
+                <div class="tipo">
+                    Caña
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">1.</span><span class="decimales-tipo">50€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto41', '1.50', 'Caña')" onmousedown="aumentarImagen('anadir411')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir411">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Tercio
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">15€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto41', '2.15', 'Tercio')" onmousedown="aumentarImagen('anadir412')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir412">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Jarra
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">75€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto41', '2.75', 'Jarra')" onmousedown="aumentarImagen('anadir413')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir413">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-1" onclick="abrirTipos('tipos-cerveza-1', 'abrir41', 'contenedor-boton-abrir-cerveza-1')"
+            onmousedown="aumentarImagen('abrir41')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir41">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto42">
+                        Alhambra 1925
+                    </div>
+                    <div class="descripcion-producto">
+                        Sabor suave y afrutado. Aroma a fruta caramelizada con toques tostados
+                    </div>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-cerveza-2">
+                <div class="tipo">
+                    Caña
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">1.</span><span class="decimales-tipo">80€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto42', '1.80', 'Caña')" onmousedown="aumentarImagen('anadir421')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir421">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Tercio
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">15€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto42', '2.15', 'Tercio')" onmousedown="aumentarImagen('anadir422')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir422">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Jarra
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">80€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto42', '2.80', 'Jarra')" onmousedown="aumentarImagen('anadir423')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir423">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-2" onclick="abrirTipos('tipos-cerveza-2', 'abrir42', 'contenedor-boton-abrir-cerveza-2')"
+            onmousedown="aumentarImagen('abrir42')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir42">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto43">
+                        Inedit
+                    </div>
+                    <div class="descripcion-producto">
+                        Sabor intenso y aroma complejo con notas dulces, de frutas, flor y cereal
+                    </div>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-cerveza-3">
+                <div class="tipo">
+                    Caña
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">1.</span><span class="decimales-tipo">70€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto43', '1.70', 'Caña')" onmousedown="aumentarImagen('anadir431')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir431">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Tercio
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">25€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto43', '2.25', 'Tercio')" onmousedown="aumentarImagen('anadir432')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir432">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Jarra
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">90€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto43', '2.90', 'Jarra')" onmousedown="aumentarImagen('anadir433')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir433">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-3" onclick="abrirTipos('tipos-cerveza-3', 'abrir43', 'contenedor-boton-abrir-cerveza-3')"
+            onmousedown="aumentarImagen('abrir43')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir43">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto44">
+                        Mahou Maestra
+                    </div>
+                    <div class="descripcion-producto">
+                        Sabor intenso a malta tostada y cacao. Su aroma destaca por sus notas a flores secas y cítricas
+                    </div>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-cerveza-4">
+                <div class="tipo">
+                    Caña
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">1.</span><span class="decimales-tipo">65€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto44', '1.65', 'Caña')" onmousedown="aumentarImagen('anadir441')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir441">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Tercio
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">05€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto44', '2.05', 'Tercio')" onmousedown="aumentarImagen('anadir442')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir442">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Jarra
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">45€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto44', '2.45', 'Jarra')" onmousedown="aumentarImagen('anadir443')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir443">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-4" onclick="abrirTipos('tipos-cerveza-4', 'abrir44', 'contenedor-boton-abrir-cerveza-4')"
+            onmousedown="aumentarImagen('abrir44')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir44">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto45">
+                        Voll-Damn Doble Malta
+                    </div>
+                    <div class="descripcion-producto">
+                        Aroma a tostados, fruta de carozos y cítricos
+                    </div>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-cerveza-5">
+                <div class="tipo">
+                    Caña
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">05€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto45', '2.05', 'Caña')" onmousedown="aumentarImagen('anadir451')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir451">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Tercio
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">2.</span><span class="decimales-tipo">95€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto45', '2.95', 'Tercio')" onmousedown="aumentarImagen('anadir452')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir452">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Jarra
+                    <div class="precio-producto">
+                        <span class="unidades-tipo">3.</span><span class="decimales-tipo">45€</span>
+                    </div>
+                    <div class="contenedor-boton-tipo" onclick="añadirProducto('producto45', '3.45', 'Jarra')" onmousedown="aumentarImagen('anadir453')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir453">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-5" onclick="abrirTipos('tipos-cerveza-5', 'abrir45', 'contenedor-boton-abrir-cerveza-5')"
+            onmousedown="aumentarImagen('abrir45')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir45">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="vinos" id="vinos">
+        <div class="titulo-seccion">
+            <img src="./images/vino.png" alt="Vino">
+            <span>Vinos</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto51">
+                        B. Rafael Palacios, Louro
+                    </div>
+                    <div class="descripcion-producto">
+                        Godello y un poco de Treixadura con crianza en madera
+                    </div>
+                </div>
+                <div class="precio-producto" id="2.95">
+                    <span class="unidades">2.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto51', '2.95', 'Vino')" onmousedown="aumentarImagen('anadir51')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir51">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto52">
+                        DO Ferreiro, Albariño
+                    </div>
+                    <div class="descripcion-producto">
+                        Con buena acidez y boca expresiva
+                    </div>
+                </div>
+                <div class="precio-producto" id="2.45">
+                    <span class="unidades">2.</span><span class="decimales">45€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto52', '2.45', 'Vino')" onmousedown="aumentarImagen('anadir52')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir52">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto53">
+                        Artuke, Pies Negros
+                    </div>
+                    <div class="descripcion-producto">
+                        Tinto profundo de fondo mineral y punto fresco
+                    </div>
+                </div>
+                <div class="precio-producto" id="2.25">
+                    <span class="unidades">2.</span><span class="decimales">25€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto53', '2.25', 'Vino')" onmousedown="aumentarImagen('anadir53')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir53">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto54">
+                        VT Castilla y León, Mauro
+                    </div>
+                    <div class="descripcion-producto">
+                        Potente, equilibrado, elegante, complejo y persistente
+                    </div>
+                </div>
+                <div class="precio-producto" id="1.95">
+                    <span class="unidades">1.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto54', '1.95', 'Vino')" onmousedown="aumentarImagen('anadir54')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir54">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="otras-bebidas" id="otras-bebidas">
+        <div class="titulo-seccion">
+            <img src="./images/otras-bebidas.png" alt="Otras Bebidas">
+            <span>Otras Bebidas</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto61">
+                        Botella de agua 500ml
+                    </div>
+                    <div class="descripcion-producto">
+                        Botella de cristal de medio litro
+                    </div>
+                </div>
+                <div class="precio-producto" id="0.65">
+                    <span class="unidades">0.</span><span class="decimales">65€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto61', '0.65', 'Bebida')" onmousedown="aumentarImagen('anadir61')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir61">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto62">
+                        Refresco
+                    </div>
+                    <div class="descripcion-producto">
+                        Lata de refresco de 33ml
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">2.</span><span class="decimales">00€</span>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-refresco">
+                <div class="tipo">
+                    Coca Cola
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Coca Cola', '2.00')" onmousedown="aumentarImagen('anadir621')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir621">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Fanta Naranja
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Fanta Naranja', '2.00')" onmousedown="aumentarImagen('anadir622')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir622">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Fanta Limón
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Fanta Limón', '2.00')" onmousedown="aumentarImagen('anadir623')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir623">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Nestea
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Nestea', '2.00')" onmousedown="aumentarImagen('anadir624')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir624">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-refresco" onclick="abrirTipos('tipos-refresco', 'abrir62', 'contenedor-boton-abrir-refresco')"
+            onmousedown="aumentarImagen('abrir62')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir62">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto63">
+                        Zumo
+                    </div>
+                    <div class="descripcion-producto">
+                        Botella de cristal de zumo de 25ml
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">1.</span><span class="decimales">50€</span>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-zumo">
+                <div class="tipo">
+                    Naranja
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Naranja', '1.50')" onmousedown="aumentarImagen('anadir631')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir631">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Piña
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Piña', '1.50')" onmousedown="aumentarImagen('anadir632')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir632">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Melocotón
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Melocotón', '1.50')" onmousedown="aumentarImagen('anadir633')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir633">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Uva
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Uva', '1.50')" onmousedown="aumentarImagen('anadir634')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir634">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-zumo" onclick="abrirTipos('tipos-zumo', 'abrir63', 'contenedor-boton-abrir-zumo')"
+            onmousedown="aumentarImagen('abrir63')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir63">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto64">
+                        Batido
+                    </div>
+                    <div class="descripcion-producto">
+                        Botella de plastico de batido de 25ml
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">1.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-batido">
+                <div class="tipo">
+                    Vainilla
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Batido', 'Vainilla', '1.75')" onmousedown="aumentarImagen('anadir641')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir641">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Chocolate
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Batido', 'Chocolate', '1.75')" onmousedown="aumentarImagen('anadir642')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir642">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Fresa
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Batido', 'Fresa', '1.75')" onmousedown="aumentarImagen('anadir643')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir643">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-batido" onclick="abrirTipos('tipos-batido', 'abrir64', 'contenedor-boton-abrir-batido')"
+            onmousedown="aumentarImagen('abrir64')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir64">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    <section class="helados" id="helados">
+        <div class="titulo-seccion">
+            <img src="./images/helado.png" alt="Helado">
+            <span>Helados</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="producto">
+    <div class="informacion-producto">
+        <div class="texto-producto">
+            <div class="titulo-producto" id="producto71">
+                Cucurucho mediano
+            </div>
+            <div class="descripcion-producto">
+                Un cucurucho mediano con una bola del sabor que quieras
+            </div>
+        </div>
+        <div class="precio-producto">
+            <span class="unidades">2.</span><span class="decimales">50€</span>
+        </div>
+    </div>
+    <div class="tipos" id="tipos-helados-1">
+        <div class="tipo">
+            Chocolate
+            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Chocolate', '2.50')" onmousedown="aumentarImagen('anadir711')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir711">
+            </div>
+        </div>
+        <div class="tipo">
+            Fresa
+            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Fresa', '2.50')" onmousedown="aumentarImagen('anadir712')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir712">
+            </div>
+        </div>
+        <div class="tipo">
+            Vainilla
+            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Vainilla', '2.50')" onmousedown="aumentarImagen('anadir713')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir713">
+            </div>
+        </div>
+        <div class="tipo">
+            Nata
+            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Nata', '2.50')" onmousedown="aumentarImagen('anadir714')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir714">
+            </div>
+        </div>
+        <div class="tipo">
+            Dulce de leche
+            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Dulce de leche', '2.50')" onmousedown="aumentarImagen('anadir715')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir715">
+            </div>
+        </div>
+        <div class="tipo">
+            Huevo kinder
+            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Huevo kinder', '2.50')" onmousedown="aumentarImagen('anadir716')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir716">
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-1" onclick="abrirTipos('tipos-helados-1', 'abrir71', 'contenedor-boton-abrir-helado-1')"
+    onmousedown="aumentarImagen('abrir71')">
+        <img src="./images/abrir.png" alt="Abrir" id="abrir71">
+    </div>
+</div>
+<hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto72">
+                        Cucurucho grande
+                    </div>
+                    <div class="descripcion-producto">
+                        Un cucurucho grande con una bola del sabor que quieras
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">45€</span>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-helados-2">
+                <div class="tipo">
+                    Chocolate
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Chocolate', '3.45')" onmousedown="aumentarImagen('anadir721')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir721">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Fresa
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Fresa', '3.45')" onmousedown="aumentarImagen('anadir722')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir722">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Vainilla
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Vainilla', '3.45')" onmousedown="aumentarImagen('anadir723')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir723">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Nata
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Nata', '3.45')" onmousedown="aumentarImagen('anadir724')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir724">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Dulce de leche
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Dulce de leche', '3.45')" onmousedown="aumentarImagen('anadir725')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir725">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Huevo kinder
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Huevo kinder', '3.45')" onmousedown="aumentarImagen('anadir726')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir726">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-2" onclick="abrirTipos('tipos-helados-2', 'abrir72', 'contenedor-boton-abrir-helado-2')"
+            onmousedown="aumentarImagen('abrir72')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir72">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto73">
+                        Copa mediana
+                    </div>
+                    <div class="descripcion-producto">
+                        Una copa mediana con 2 bolas del sabor que quieras
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">2.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-helados-3">
+                <div class="tipo">
+                    Chocolate
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Chocolate', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir731')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir731">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Fresa
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Fresa', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir732')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir732">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Vainilla
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Vainilla', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir733')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir733">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Nata
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Nata', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir734')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir734">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Dulce de leche
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Dulce de leche', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir735')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir735">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Huevo kinder
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Huevo kinder', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir736')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir736">
+                    </div>
+                </div>
+                <div class="sabores-elegidos">
+                    <div class="futuros-sabores">
+                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor731" onclick="borrarSabor('sabor-elegido-731', 'quitarSabor731', 'anadir73')">Primer sabor: <span id="sabor-elegido-731"></span>
+                    </div>
+                    <div class="futuros-sabores">
+                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor732" onclick="borrarSabor('sabor-elegido-732', 'quitarSabor732', 'anadir73')">Segundo sabor: <span id="sabor-elegido-732"></span>
+                    </div>
+                    <div class="añadir-helado" onclick="añadirHeladoDefinitivoVariosSabores('2', 'Helado Copa mediana', 'sabor-elegido-731', 'sabor-elegido-732', '', '2.75')"
+                    onmousedown="aumentarImagen('anadir73')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir73">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-3" onclick="abrirTipos('tipos-helados-3', 'abrir73', 'contenedor-boton-abrir-helado-3')"
+            onmousedown="aumentarImagen('abrir73')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir73">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto74">
+                        Copa grande
+                    </div>
+                    <div class="descripcion-producto">
+                        Una copa grande con 3 bolas del sabor que quieras
+                    </div>
+                </div>
+                <div class="precio-producto" id="3.95">
+                    <span class="unidades">3.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="tipos" id="tipos-helados-4">
+                <div class="tipo">
+                    Chocolate
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Chocolate', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir741')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir741">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Fresa
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Fresa', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir742')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir742">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Vainilla
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Vainilla', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir743')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir743">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Nata
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Nata', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir744')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir744">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Dulce de leche
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Dulce de leche', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir745')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir745">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Huevo kinder
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Huevo kinder', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir746')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir746">
+                    </div>
+                </div>
+                <div class="sabores-elegidos">
+                    <div class="futuros-sabores">
+                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor741" onclick="borrarSabor('sabor-elegido-741', 'quitarSabor741', 'anadir74')">Primer sabor: <span id="sabor-elegido-741"></span>
+                    </div>
+                    <div class="futuros-sabores">
+                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor742" onclick="borrarSabor('sabor-elegido-742', 'quitarSabor742', 'anadir74')">Segundo sabor: <span id="sabor-elegido-742"></span>
+                    </div>
+                    <div class="futuros-sabores">
+                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor743" onclick="borrarSabor('sabor-elegido-743', 'quitarSabor743', 'anadir74')">Tercer sabor: <span id="sabor-elegido-743"></span>
+                    </div>
+                    <div class="añadir-helado" onclick="añadirHeladoDefinitivoVariosSabores('3', 'Helado Copa grande', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743', '3.95')"
+                    onmousedown="aumentarImagen('anadir74')">
+                        <img src="./images/anadir.png" alt="Añadir" id="anadir74">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-4" onclick="abrirTipos('tipos-helados-4', 'abrir74', 'contenedor-boton-abrir-helado-4')"
+            onmousedown="aumentarImagen('abrir74')">
+                <img src="./images/abrir.png" alt="Abrir" id="abrir74">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="cafes" id="cafes">
+        <div class="titulo-seccion">
+            <img src="./images/cafe.png" alt="Café">
+            <span>Cafés</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto81">
+                        Espresso
+                    </div>
+                    <div class="descripcion-producto">
+                        Café negro fuerte
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">0.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto81', '0.75', 'Café')" onmousedown="aumentarImagen('anadir81')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir81">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto82">
+                        Cappuccino
+                    </div>
+                    <div class="descripcion-producto">
+                        Espresso con leche caliente y espuma de leche
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">0.</span><span class="decimales">85€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto82', '0.85', 'Café')" onmousedown="aumentarImagen('anadir82')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir82">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto83">
+                        Americano
+                    </div>
+                    <div class="descripcion-producto">
+                        Chorrito de Espresso en una taza de agua caliente
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">0.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto83', '0.75', 'Café')" onmousedown="aumentarImagen('anadir83')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir83">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto84">
+                        Con leche
+                    </div>
+                    <div class="descripcion-producto">
+                        Chorro de café espresso por tres partes de leche
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">0.</span><span class="decimales">85€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto84', '0.85', 'Café')" onmousedown="aumentarImagen('anadir84')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir84">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto85">
+                        Moca
+                    </div>
+                    <div class="descripcion-producto">
+                        Cappuccino con sirope de chocolate
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">0.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto85', '0.95', 'Café')" onmousedown="aumentarImagen('anadir85')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir85">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto86">
+                        Bombón
+                    </div>
+                    <div class="descripcion-producto">
+                        Espresso y leche condesada
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">1.</span><span class="decimales">05€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto86', '1.05', 'Café')" onmousedown="aumentarImagen('anadir86')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir86">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+
+
+
+
+
+    </section>
+
+
+
+    <section class="tartas" id="tartas">
+        <div class="titulo-seccion">
+            <img src="./images/tarta.png" alt="Tarta">
+            <span>Tartas</span>
+            <hr>
+        </div>
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto91">
+                        3 colores
+                    </div>
+                    <div class="descripcion-producto">
+                        Chocolate blanco, chocolate con leche y chocolate negro
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">75€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto91', '3.75', 'Tarta')" onmousedown="aumentarImagen('anadir91')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir91">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto92">
+                        Pecado
+                    </div>
+                    <div class="descripcion-producto">
+                        Mouse de chocolate y baileys
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">95€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto92', '3.95', 'Tarta')" onmousedown="aumentarImagen('anadir92')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir92">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto93">
+                        Fiesta
+                    </div>
+                    <div class="descripcion-producto">
+                        Fresas con crema de vainilla
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">50€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto93', '3.05', 'Tarta')" onmousedown="aumentarImagen('anadir93')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir93">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto94">
+                        Americana
+                    </div>
+                    <div class="descripcion-producto">
+                        Hojaldre con fresas y almendra
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">65€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto94', '3.65', 'Tarta')" onmousedown="aumentarImagen('anadir94')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir94">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto95">
+                        Abuela
+                    </div>
+                    <div class="descripcion-producto">
+                        Chocolate y galletas
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">3.</span><span class="decimales">25€</span>
+                </div>
+            </div>
+            <div class="contenedor-boton" onclick="añadirProducto('producto95', '3.25', 'Tarta')" onmousedown="aumentarImagen('anadir95')">
+                <img src="./images/anadir.png" alt="Añadir" id="anadir95">
+            </div>
+        </div>
+        <hr class="divisor-productos">
+
+    </section>
+
+    <section class="pedido">
+        <div class="titulo-seccion">
+            <img src="./images/pedido.png" alt="Pedido">
+            <span>Pedido</span>
+            <hr>
+        </div>
+        <div class="pedido-sin-empezar" id="pedido-sin-empezar">
+            Aun no has añadido nada al pedido
+        </div>
+        <div class="lista-pedido" id="pedido">
+
+        </div>
+        <div class="precio-total-pedido" id="precio-total-pedido">
+            Precio total del pedido: <span><span id="precio-total"></span>€</span> 
+        </div>
+        <div class="divisor">
+                <hr>
+        </div>
+    </section>
+
+
+
+    <section class="redes">
+        <div class="contenedor-social">
+            <span>Puedes seguirnos en nuestras redes sociales</span>
+            <div class="redes-sociales">
+                <img src="./images/instagram.png" alt="Instagram" onclick="location.href='https://www.instagram.com/'">
+                <img src="./images/twitter.png" alt="Twitter" onclick="location.href='https://www.twitter.com/'">
+                <img src="./images/facebook.png" alt="Facebook" onclick="location.href='https://www.facebook.com/'">
+            </div>
+            <span>También puedes valorarnos en Google y dejar una reseña</span> 
+            <div class="redes-sociales">
+                <img src="./images/resena.png" alt="Reseña Google" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_esES881ES881&tbm=lcl&sxsrf=ALeKk01y6PZtuC0sT4fJKI3Su9v1vPd1mA:1614090053631&q=burger+king&spell=1&sa=X&ved=0ahUKEwiMuqCCmoDvAhVyxoUKHSaKCKwQBQgeKAA&biw=1920&bih=969&dpr=1#lrd=0xd604f5dd2128185:0xc31f3bc5370b701e,1,,,&rlfi=hd:;si:14060022279892070430,l,CgtidXJnZXIga2luZyIDiAEBSPDS3ezlgICACFoqCgtidXJnZXIga2luZxAAEAEYABgBIgtidXJnZXIga2luZyoGCAIQABABkgEUZmFzdF9mb29kX3Jlc3RhdXJhbnSqARMQASoPIgtidXJnZXIga2luZygO;mv:[[39.5289757,-0.31733649999999997],[39.4482092,-0.43154709999999996]]'">
+            </div>
+        </div>
+
+    </section>
+	<script src="../js/scripts.js></script>
+</body>
+
+</html>

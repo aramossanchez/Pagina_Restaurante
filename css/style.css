@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("../images/fondo.jpg");
+    background-repeat: repeat;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20% 0;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.enlaces{
+    position: relative;
+}
+
+.enlaces img{
+    background-color: #40403E;
+    border: solid 0.25em #FFFFFA;
+    border-radius: 8em;
+    width: 17.5%;
+}
+
+.enlaces-principales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5% 15% 5%;
+}
+
+.enlaces-comidas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2.5% 5%;
+    transition: 0.25s;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    opacity:0;
+}
+
+.enlaces-comidas img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 2.5%;
+    width: 15%;
+}
+
+.enlaces-bebidas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2.5% 5%;
+    transition: 0.25s;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    opacity:0;
+}
+
+.enlaces-bebidas img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 2.5%;
+    width: 15%;
+}
+
+.enlaces-postres{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 2.5% 2%;
+    transition: 0.25s;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    opacity:0;
+}
+
+.enlaces-postres img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 2.5%;
+    width: 15%;
+}
+
+.boton-subir-arriba{
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    transition: 0.5s;
+    border-radius: 8em;
+    width: 15%;
+    text-align: right;
+    z-index: 2;
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+.boton-subir-arriba img{
+    background-color: #40403E;
+    border: solid 0.25em #FFFFFA;
+    border-radius: 8em;
+    padding: 0.5em;
+    width: 60%;
+}
+
+.boton-revisar-pedido{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    transition: 0.5s;
+    border-radius: 8em;
+    width: 15%;
+    text-align: right;
+    z-index: 2;
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+.boton-revisar-pedido img{
+    background-color: #40403E;
+    border: solid 0.25em #FFFFFA;
+    border-radius: 8em;
+    padding: 0.5em;
+    width: 60%;
+    animation-duration: 1s;
+    animation-name: boton-pedido;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes boton-pedido {
+    from {
+        transform:scale(1)
+    }
+
+    50%{
+        transform:scale(1.1)
+    }
+
+    to {
+        transform:scale(1)
+    }
+  }
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-seccion{
+    width: 80%;
+    color:#40403E;
+    padding: 10% 0 2.5% 0;
+    font-size: 170%;
+    font-family: 'Truculenta', sans-serif;
+    font-weight: bold;
+}
+
+.titulo-seccion img{
+    width: 10%;
+}
+
+.titulo-seccion hr{
+    height:2px;
+    border:0;
+    background-color: #40403E;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color:#40403E;
+    width: 80%;
+    position: relative;
+}
+
+.informacion-producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo-producto, .unidades{
+    font-size: 145%;
+}
+
+.descripcion-producto{
+    color: #80807D;
+}
+
+.tipos{
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 0;
+    opacity:0;
+}
+
+.visible{
+    opacity: 1;
+    height: auto;
+}
+
+.tipo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2.5%;
+    width: 80%;
+}
+
+.contenedor-boton-tipo{
+    position: absolute;
+    top:28%;
+    left: -10%;
+    height: 90%;
+    width: 100%;
+}
+
+.contenedor-boton-tipo img{
+    position: relative;
+    top:15%;
+    width: 6%;
+}
+
+.decimales {
+    font-size: 125%;
+}
+
+.contenedor-boton-abrir{
+    position: absolute;
+    top:0;
+    left: -10%;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-boton-abrir img{
+    position: relative;
+    top:25%;
+    width: 5%;
+}
+
+.contenedor-boton{
+    position: absolute;
+    left: -10%;
+    height: 90%;
+    width: 100%;
+}
+
+.contenedor-boton img{
+    position: relative;
+    top:15%;
+    width: 5%;
+}
+
+.contenedor-boton-quitar{
+    position: absolute;
+    left: 2.5%;
+    width: 80%;
+}
+
+.contenedor-boton-quitar img{
+    padding-top: 1.25%;
+    width: 4%;
+}
+
+.contenedor-boton-quitar-helado{
+    position: absolute;
+    left: 2.5%;
+    width: 80%;
+    height: 7%;
+}
+
+.contenedor-boton-quitar-helado img{
+    padding-top: 5%;
+    width: 4%;
+}
+
+.sabores-elegidos{
+    padding: 10% 0 0 24%;
+    align-self: flex-start;
+}
+
+.futuros-sabores{
+    padding-bottom: 0.2em;
+}
+
+.futuros-sabores img{
+    width: 5%;
+    padding-right: 2%;
+    opacity:0;
+    transition: 0.2s;
+}
+
+.añadir-helado{
+    position: relative;
+    transition: 0.5s;
+}
+
+.añadir-helado img{
+    position: absolute;
+    top:-2em;
+    left:-2em;
+    width: 8%;
+    transition: 0.25s;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+#anadir74{
+    top: -2.9em;
+}
+
+.divisor-productos{
+    width: 75%;
+    margin: 2.5%;
+    height:1px;
+    border:0;
+    background-color: #40403E;
+}
+
+.pedido-sin-empezar{
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-bottom: 0.5em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #40403E;
+}
+
+.lista-pedido{
+    width: 80%;
+}
+
+.pedido-individual{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #40403E;
+}
+
+.lista-pedido hr {
+    height:1px;
+    border:0;
+    border-top: 2px dotted #BFBFBB;
+    padding-bottom: 0.45em;
+}
+
+.precio-total-pedido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 0.25em;
+    font-size: 145%;
+    font-family: 'Truculenta', sans-serif;
+    font-weight: bold;
+    color: #40403E;
+    display: none;
+}
+
+.divisor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.divisor hr{
+    width: 80%;
+    margin-bottom: 0.25em;
+    height:2px;
+    border:0;
+    background-color: #40403E;
+}
+
+.redes{
+    margin-top: 25%;
+    padding: 10% 0;
+}
+
+.contenedor-social{
+    text-align: center;
+    width: 80%;
+}
+
+.contenedor-social span{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 140%;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.redes-sociales img{
+    background-color: #40403E;
+    border: solid 0.25em #FFFFFA;
+    border-radius: 8em;
+    width: 17.5%;
+    margin: 10% 0;
+}
