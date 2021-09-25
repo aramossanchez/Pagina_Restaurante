@@ -1,6 +1,7 @@
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap');
 
+/* GENERAL */
 :root{
     --color-claro: #FFFFFA;
     --color-oscuro: #40403E;
@@ -13,14 +14,16 @@ body{
     background-image: url("../images/fondo.jpg");
     background-repeat: repeat;
 }
+
+/* CONTROLO ENCABEZADOS, FOTO, TEXTO Y MAPA */
 .pedido{
     font-family: 'Truculenta', sans-serif;
 }
 .pedido h1{
     font-size: 5em;
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
     text-shadow: 0px 0px 9px var(--color-oscuro);
 }
 .pedido h2{
@@ -30,10 +33,14 @@ body{
 .pedido img{
     width: 100%;
     height: auto;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
+    border: 0.1em solid var(--color-oscuro);
 }
 .pedido .importante{
     font-size: 1.5em;
+}
+.telefono{
+    font-weight: bold;
 }
 .maps{
     border: 0.2em solid var(--color-oscuro);
