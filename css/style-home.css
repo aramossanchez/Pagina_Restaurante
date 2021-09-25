@@ -36,6 +36,7 @@ html,body{
 .nav img{
     width: 6em;
     margin: 0.5em;
+    transition: 0.3s;
 }
 .nav a, #footer a{
     color: var(--color-claro);
@@ -66,10 +67,29 @@ html,body{
 --------------------------------------------CUERPO PAGINA------------------------------------------------------
 ***************************************************************************************************************
 ***************************************************************************************************************/
+.boton-subir-arriba{
+    position: fixed;
+    bottom: 5%;
+    left: 95%;
+    border-radius: 8em;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    transform: scaleY(0);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.boton-subir-arriba img{
+    background-color: var(--color-oscuro);
+    border: solid 0.25em var(--color-claro);
+    border-radius: 8em;
+    padding: 0.5em;
+    width: 4em;
+}
 .article {
-    background-color: coral;
     font-family: 'Truculenta', sans-serif;
-    height: 100vh;
+    height: auto;
 }
 a button{
     border: 0px solid;
@@ -111,7 +131,6 @@ a button:hover{
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
     padding: 5em 0;
 }
 #presentacion div:first-child{
@@ -135,7 +154,6 @@ a button:hover{
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-    height: auto;
 }
 #carta .contenido-sobre-foto-difuminada{
     padding-left: 3em;
@@ -183,7 +201,6 @@ a button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: auto;
 }
 #locales h1{
     margin-top: 0.75em;
@@ -224,7 +241,6 @@ a button:hover{
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: auto;
 }
 #mensaje-gancho img{
     margin: 1em;

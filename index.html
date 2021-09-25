@@ -9,25 +9,29 @@ VERSIÓN: 1.0
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Fast Food - Inicio</title>
-    <link rel="stylesheet" href="./css/style-main.css">
+    <link rel="stylesheet" href="./css/style-home.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="inicio">
+        <!-- -------------------------------- FLECHA INICIO -------------------------------- -->
+        <div class="boton-subir-arriba" id="boton-subir-arriba">
+            <img src="./images/flecha-arriba.png" alt="Flecha Arriba" onclick="location.href='#inicio'">
+        </div>  
         <!-- -------------------------------- MENU DE ARRIBA -------------------------------- -->
-        <div class="row nav">
+        <div class="row nav" >
                 <div class="col-6">
-                    <img src="./images/logo_inicio.png" alt="Logo">
+                    <img id="img-nav" src="./images/logo_inicio.png" alt="Logo">
                 </div>
                 <div class="col-6 redes-sociales d-flex align-items-center justify-content-end">
                     <a href="./pages/carta.html">CARTA FAST FOOD!</a>
                     <a href="#locales">HAZ TU PEDIDO</a>
-                    <img src="./images/instagram.png" alt="Instagram">
-                    <img src="./images/twitter.png" alt="Twitter">
-                    <img src="./images/facebook.png" alt="Facebook">
+                    <img class="img-nav" src="./images/instagram.png" alt="Instagram">
+                    <img class="img-nav" src="./images/twitter.png" alt="Twitter">
+                    <img class="img-nav" src="./images/facebook.png" alt="Facebook">
                 </div>
         </div>
         <!-- -------------------------------- PRESENTACIÓN -------------------------------- -->
@@ -179,5 +183,6 @@ VERSIÓN: 1.0
             </div>
         </div>
     </div>
+    <script src="./js/script-home.js"></script>
 </body>
 </html>
