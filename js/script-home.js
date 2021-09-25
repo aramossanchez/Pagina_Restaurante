@@ -16,22 +16,27 @@ window.onscroll = function aparecerBotonArriba() {
         botonSubirArriba.style.transform = "scaleY(1)";
     }
     // MENÚ ARRIBA
-    if(window.pageYOffset < 50){
+    if(window.pageYOffset < 50 && screen.width > 500) {
         logoArriba.style.width = "6em";
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 6; i++) {
             menuArribaIMG[i].style.width = "2em";
         }
     }
-    if(window.pageYOffset >= 50){
+    if(window.pageYOffset >= 50 && screen.width > 500){
         logoArriba.style.width = "3em";
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 6; i++) {
             menuArribaIMG[i].style.width = "1em";
+        }
+    }
+    if(screen.width < 500){
+        for (let i = 0; i < 6; i++) {
+            menuArribaIMG[i].style.width = "3em";
         }
     }
 };
 const AbrirCerrarMenuArriba = () =>{
     if (!menuArribaMovilAbierto) {
-        menuArribaMovil.style.height = "9.5em";
+        menuArribaMovil.style.height = "14em";
         for (let i = 0; i < 6; i++) {
             opcionesMenuMovil[i].style.transform = "scaleX(1)";
         }

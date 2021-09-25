@@ -76,7 +76,7 @@ html,body{
 .boton-subir-arriba{
     position: fixed;
     bottom: 5%;
-    left: 95%;
+    left: 78%;
     border-radius: 8em;
     width: 100%;
     z-index: 5;
@@ -315,11 +315,11 @@ a button:hover{
         background-color: var(--color-oscuro);
         border: solid 0.1em var(--color-claro);
         border-radius: 8em;
-        width: 2em;
+        width: 3em;
         cursor: pointer;
     }
-    #menu-arriba-pantalla-pequeña a{
-        margin: 0;
+    #menu-arriba-pantalla-pequeña .opcion-menu-movil{
+        margin-top: 0.75em;
     }
     #menu-arriba-pantalla-grande{
         display: none !important;
