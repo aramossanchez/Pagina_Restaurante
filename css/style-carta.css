@@ -16,10 +16,21 @@ html,body{
 }
 
 body{
-    background-image: url("../images/fondo.jpg");
-    background-repeat: repeat;
+    background-image: url("../img/helado-inicio.jpg");
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
+.fondo-difuminada{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #fffffad0;
+}
+.contenido-sobre-fondo-difuminado{
+    z-index: 4;
+}
 .logo{
     display: flex;
     flex-direction: row;
@@ -185,6 +196,7 @@ section{
     font-size: 170%;
     font-family: 'Truculenta', sans-serif;
     font-weight: bold;
+    z-index: 4;
 }
 
 .titulo-seccion img{
@@ -353,6 +365,7 @@ section{
     height:1px;
     border:0;
     background-color: #40403E;
+    z-index: 4;
 }
 
 .pedido-sin-empezar{

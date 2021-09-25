@@ -133,7 +133,7 @@ a button:hover{
 --------------------------------------------PRESENTACION------------------------------------------------------
 ***************************************************************************************************************/
 #presentacion{
-    background-image: url("../images/pizza-inicio.jpg");
+    background-image: url("../img//home/pizza-inicio.jpg");
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@ a button:hover{
 --------------------------------------------CARTA------------------------------------------------------
 ***************************************************************************************************************/
 #carta{
-    background-image: url("../images/bocadillo-inicio.jpg");
+    background-image: url("../img/home/bocadillo-inicio.jpg");
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ a button:hover{
 --------------------------------------------CONTACTO------------------------------------------------------
 ***************************************************************************************************************/
 #contacto{
-    background-image: url("../images/hamburguesa-inicio.jpg");
+    background-image: url("../img/home/hamburguesa-inicio.jpg");
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ a button:hover{
 --------------------------------------------LOCALES------------------------------------------------------
 ***************************************************************************************************************/
 #locales{
-    background-image: url("../images/helado-inicio.jpg");
+    background-image: url("../img/helado-inicio.jpg");
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,7 +243,7 @@ a button:hover{
 --------------------------------------------MENSAJE GANCHO------------------------------------------------------
 ***************************************************************************************************************/
 #mensaje-gancho{
-    background-image: url("../images/tarta-inicio.jpg");
+    background-image: url("../img/home/tarta-inicio.jpg");
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;

@@ -7,54 +7,54 @@ VERSIÓN: 1.0
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="./images/favicon.png">
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" type="image/png" href="../img/carta/favicon.png">
+	<link rel="stylesheet" href="../css/style-carta.css">
 	<title>Restaurante Fast food!</title>
 </head>
 
 <body>
-    
-    <header>
+    <div class="fondo-difuminada"></div>
+    <header class="contenido-sobre-fondo-difuminado">
         <div class="logo">
-            <img src="./images/logo.png" alt="Logo">
+            <img src="../img/logo.png" alt="Logo" class="contenido-sobre-fondo-difuminado">
         </div>
         <div class="enlaces" id="inicio"> 
             
             <div class="enlaces-principales">
-                <img src="./images/comidas.png" alt="Comidas" onclick="enlacesSuperiores('comida')">
-                <img src="./images/bebidas.png" alt="Bebidas" onclick="enlacesSuperiores('bebida')">
-                <img src="./images/postres.png" alt="Postres" onclick="enlacesSuperiores('postre')">
+                <img src="../img/carta/comidas.png" alt="Comidas" onclick="enlacesSuperiores('comida')">
+                <img src="../img/carta/bebidas.png" alt="Bebidas" onclick="enlacesSuperiores('bebida')">
+                <img src="../img/carta/postres.png" alt="Postres" onclick="enlacesSuperiores('postre')">
             </div>
             <div class="enlaces-secundarios">
                 <div class="enlaces-comidas" id="enlaces-comidas">
-                    <img src="./images/bocadillo-enlace.png" alt="Enlace Bocadillo" onclick="location.href='#bocadillos'">
-                    <img src="./images/pizza-enlace.png" alt="Enlace Pizza" onclick="location.href='#pizzas'">
-                    <img src="./images/hamburguesa-enlace.png" alt="Enlace Hamburguesa" onclick="location.href='#hamburguesas'">
+                    <img src="../img/carta/bocadillo-enlace.png" alt="Enlace Bocadillo" onclick="location.href='#bocadillos'">
+                    <img src="../img/carta/pizza-enlace.png" alt="Enlace Pizza" onclick="location.href='#pizzas'">
+                    <img src="../img/carta/hamburguesa-enlace.png" alt="Enlace Hamburguesa" onclick="location.href='#hamburguesas'">
                 </div>
                 <div class="enlaces-bebidas" id="enlaces-bebidas">
-                    <img src="./images/cerveza-enlace.png" alt="Enlace Cerveza" onclick="location.href='#cervezas'">
-                    <img src="./images/vino-enlace.png" alt="Enlace Vino" onclick="location.href='#vinos'">
-                    <img src="./images/otras-bebidas-enlace.png" alt="Enlace Otras Bebidas" onclick="location.href='#otras-bebidas'">
+                    <img src="../img/carta/cerveza-enlace.png" alt="Enlace Cerveza" onclick="location.href='#cervezas'">
+                    <img src="../img/carta/vino-enlace.png" alt="Enlace Vino" onclick="location.href='#vinos'">
+                    <img src="../img/carta/otras-bebidas-enlace.png" alt="Enlace Otras Bebidas" onclick="location.href='#otras-bebidas'">
                 </div>
                 <div class="enlaces-postres" id="enlaces-postres">
-                    <img src="./images/helado-enlace.png" alt="Enlace Helado" onclick="location.href='#helados'">
-                    <img src="./images/cafe-enlace.png" alt="Enlace Café" onclick="location.href='#cafes'">
-                    <img src="./images/tarta-enlace.png" alt="Enlace Tarta" onclick="location.href='#tartas'">
+                    <img src="../img/carta/helado-enlace.png" alt="Enlace Helado" onclick="location.href='#helados'">
+                    <img src="../img/carta/cafe-enlace.png" alt="Enlace Café" onclick="location.href='#cafes'">
+                    <img src="../img/carta/tarta-enlace.png" alt="Enlace Tarta" onclick="location.href='#tartas'">
                 </div>
             </div>
         </div>
     </header>
 
     <div class="boton-subir-arriba" id="boton-subir-arriba">
-        <img src="./images/flecha-arriba.png" alt="Flecha Arriba" onclick="location.href='#inicio'">
+        <img src="../img/flecha-arriba.png" alt="Flecha Arriba" onclick="location.href='#inicio'">
     </div>  
     <div class="boton-revisar-pedido" id="boton-revisar-pedido">
-        <img src="./images/boton-pedido.png" alt="Boton Pedido" onclick="location.href='#precio-total-pedido'">
+        <img src="../img/carta/boton-pedido.png" alt="Boton Pedido" onclick="location.href='#precio-total-pedido'">
     </div>  
     
     <section class="bocadillos" id="bocadillos">
         <div class="titulo-seccion">
-            <img src="./images/bocadillo.png" alt="Bocadillo">
+            <img src="../img/carta/bocadillo.png" alt="Bocadillo">
             <span>Bocadillos</span>
             <hr>
         </div>
@@ -74,7 +74,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto11', '4.95', 'Bocadillo')" onmousedown="aumentarImagen('anadir11')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir11">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir11">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -94,7 +94,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto12', '3.50', 'Bocadillo')" onmousedown="aumentarImagen('anadir12')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir12">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir12">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -114,7 +114,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto13', '2.80', 'Bocadillo')" onmousedown="aumentarImagen('anadir13')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir13">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir13">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -134,7 +134,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto14', '4.80', 'Bocadillo')" onmousedown="aumentarImagen('anadir14')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir14">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir14">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -154,7 +154,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto15', '4.60', 'Bocadillo')" onmousedown="aumentarImagen('anadir15')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir15">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir15">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -174,7 +174,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto16', '4.20', 'Bocadillo')" onmousedown="aumentarImagen('anadir16')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir16">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir16">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -194,7 +194,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto17', '3.85', 'Bocadillo')" onmousedown="aumentarImagen('anadir17')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir17">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir17">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -214,7 +214,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto18', '4.15', 'Bocadillo')" onmousedown="aumentarImagen('anadir18')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir18">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir18">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -234,7 +234,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto19', '3.95', 'Bocadillo')" onmousedown="aumentarImagen('anadir19')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir19">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir19">
             </div>
         </div>
         <hr class="divisor-productos">        
@@ -254,7 +254,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto110', '3.75', 'Bocadillo')" onmousedown="aumentarImagen('anadir110')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir110">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir110">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -280,7 +280,7 @@ VERSIÓN: 1.0
 
     <section class="pizzas" id="pizzas">
         <div class="titulo-seccion">
-            <img src="./images/pizza.png" alt="Pizza">
+            <img src="../img/carta/pizza.png" alt="Pizza">
             <span>Pizzas</span>
             <hr>
         </div>
@@ -300,7 +300,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto21', '12.95', 'Pizza')" onmousedown="aumentarImagen('anadir21')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir21">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir21">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -320,7 +320,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto22', '10.50', 'Pizza')" onmousedown="aumentarImagen('anadir22')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir22">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir22">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -340,7 +340,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto23', '8.75', 'Pizza')" onmousedown="aumentarImagen('anadir23')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir23">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir23">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -360,7 +360,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto24', '9.25', 'Pizza')" onmousedown="aumentarImagen('anadir24')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir24">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir24">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -380,7 +380,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto25', '9.80', 'Pizza')" onmousedown="aumentarImagen('anadir25')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir25">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir25">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -400,7 +400,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto26', '9.75', 'Pizza')" onmousedown="aumentarImagen('anadir26')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir26">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir26">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -421,7 +421,7 @@ VERSIÓN: 1.0
 
     <section class="hamburguesas" id="hamburguesas">
         <div class="titulo-seccion">
-            <img src="./images/hamburguesa.png" alt="Pizza">
+            <img src="../img/carta/hamburguesa.png" alt="Pizza">
             <span>Hamburguesas</span>
             <hr>
         </div>
@@ -441,7 +441,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto31', '3.50', 'Hamburgesa')" onmousedown="aumentarImagen('anadir31')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir31">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir31">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -461,7 +461,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto32', '4.25', 'Hamburgesa')" onmousedown="aumentarImagen('anadir32')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir32">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir32">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -481,7 +481,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto33', '4.75', 'Hamburgesa')" onmousedown="aumentarImagen('anadir33')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir33">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir33">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -501,7 +501,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto34', '3.95', 'Hamburgesa')" onmousedown="aumentarImagen('anadir34')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir34">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir34">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -521,7 +521,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto35', '4.50', 'Hamburgesa')" onmousedown="aumentarImagen('anadir35')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir35">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir35">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -541,7 +541,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto36', '4.25', 'Hamburgesa')" onmousedown="aumentarImagen('anadir36')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir36">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir36">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -561,7 +561,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto37', '4.75', 'Hamburgesa')" onmousedown="aumentarImagen('anadir37')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir37">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir37">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -580,7 +580,7 @@ VERSIÓN: 1.0
 
     <section class="cervezas" id="cervezas">
         <div class="titulo-seccion">
-            <img src="./images/cerveza.png" alt="Cerveza">
+            <img src="../img/carta/cerveza.png" alt="Cerveza">
             <span>Cervezas</span>
             <hr>
         </div>
@@ -603,7 +603,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">1.</span><span class="decimales-tipo">50€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto41', '1.50', 'Caña')" onmousedown="aumentarImagen('anadir411')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir411">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir411">
                     </div>
                 </div>
                 <div class="tipo">
@@ -612,7 +612,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">15€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto41', '2.15', 'Tercio')" onmousedown="aumentarImagen('anadir412')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir412">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir412">
                     </div>
                 </div>
                 <div class="tipo">
@@ -621,13 +621,13 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">75€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto41', '2.75', 'Jarra')" onmousedown="aumentarImagen('anadir413')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir413">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir413">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-1" onclick="abrirTipos('tipos-cerveza-1', 'abrir41', 'contenedor-boton-abrir-cerveza-1')"
             onmousedown="aumentarImagen('abrir41')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir41">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir41">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -650,7 +650,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">1.</span><span class="decimales-tipo">80€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto42', '1.80', 'Caña')" onmousedown="aumentarImagen('anadir421')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir421">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir421">
                     </div>
                 </div>
                 <div class="tipo">
@@ -659,7 +659,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">15€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto42', '2.15', 'Tercio')" onmousedown="aumentarImagen('anadir422')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir422">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir422">
                     </div>
                 </div>
                 <div class="tipo">
@@ -668,13 +668,13 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">80€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto42', '2.80', 'Jarra')" onmousedown="aumentarImagen('anadir423')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir423">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir423">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-2" onclick="abrirTipos('tipos-cerveza-2', 'abrir42', 'contenedor-boton-abrir-cerveza-2')"
             onmousedown="aumentarImagen('abrir42')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir42">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir42">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -697,7 +697,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">1.</span><span class="decimales-tipo">70€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto43', '1.70', 'Caña')" onmousedown="aumentarImagen('anadir431')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir431">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir431">
                     </div>
                 </div>
                 <div class="tipo">
@@ -706,7 +706,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">25€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto43', '2.25', 'Tercio')" onmousedown="aumentarImagen('anadir432')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir432">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir432">
                     </div>
                 </div>
                 <div class="tipo">
@@ -715,13 +715,13 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">90€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto43', '2.90', 'Jarra')" onmousedown="aumentarImagen('anadir433')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir433">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir433">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-3" onclick="abrirTipos('tipos-cerveza-3', 'abrir43', 'contenedor-boton-abrir-cerveza-3')"
             onmousedown="aumentarImagen('abrir43')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir43">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir43">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -744,7 +744,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">1.</span><span class="decimales-tipo">65€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto44', '1.65', 'Caña')" onmousedown="aumentarImagen('anadir441')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir441">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir441">
                     </div>
                 </div>
                 <div class="tipo">
@@ -753,7 +753,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">05€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto44', '2.05', 'Tercio')" onmousedown="aumentarImagen('anadir442')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir442">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir442">
                     </div>
                 </div>
                 <div class="tipo">
@@ -762,13 +762,13 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">45€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto44', '2.45', 'Jarra')" onmousedown="aumentarImagen('anadir443')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir443">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir443">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-4" onclick="abrirTipos('tipos-cerveza-4', 'abrir44', 'contenedor-boton-abrir-cerveza-4')"
             onmousedown="aumentarImagen('abrir44')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir44">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir44">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -791,7 +791,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">05€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto45', '2.05', 'Caña')" onmousedown="aumentarImagen('anadir451')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir451">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir451">
                     </div>
                 </div>
                 <div class="tipo">
@@ -800,7 +800,7 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">2.</span><span class="decimales-tipo">95€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto45', '2.95', 'Tercio')" onmousedown="aumentarImagen('anadir452')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir452">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir452">
                     </div>
                 </div>
                 <div class="tipo">
@@ -809,13 +809,13 @@ VERSIÓN: 1.0
                         <span class="unidades-tipo">3.</span><span class="decimales-tipo">45€</span>
                     </div>
                     <div class="contenedor-boton-tipo" onclick="añadirProducto('producto45', '3.45', 'Jarra')" onmousedown="aumentarImagen('anadir453')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir453">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir453">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-cerveza-5" onclick="abrirTipos('tipos-cerveza-5', 'abrir45', 'contenedor-boton-abrir-cerveza-5')"
             onmousedown="aumentarImagen('abrir45')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir45">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir45">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -836,7 +836,7 @@ VERSIÓN: 1.0
 
     <section class="vinos" id="vinos">
         <div class="titulo-seccion">
-            <img src="./images/vino.png" alt="Vino">
+            <img src="../img/carta/vino.png" alt="Vino">
             <span>Vinos</span>
             <hr>
         </div>
@@ -856,7 +856,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto51', '2.95', 'Vino')" onmousedown="aumentarImagen('anadir51')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir51">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir51">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -876,7 +876,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto52', '2.45', 'Vino')" onmousedown="aumentarImagen('anadir52')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir52">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir52">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -896,7 +896,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto53', '2.25', 'Vino')" onmousedown="aumentarImagen('anadir53')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir53">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir53">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -916,7 +916,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto54', '1.95', 'Vino')" onmousedown="aumentarImagen('anadir54')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir54">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir54">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -938,7 +938,7 @@ VERSIÓN: 1.0
 
     <section class="otras-bebidas" id="otras-bebidas">
         <div class="titulo-seccion">
-            <img src="./images/otras-bebidas.png" alt="Otras Bebidas">
+            <img src="../img/carta/otras-bebidas.png" alt="Otras Bebidas">
             <span>Otras Bebidas</span>
             <hr>
         </div>
@@ -958,7 +958,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto61', '0.65', 'Bebida')" onmousedown="aumentarImagen('anadir61')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir61">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir61">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -981,31 +981,31 @@ VERSIÓN: 1.0
                 <div class="tipo">
                     Coca Cola
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Coca Cola', '2.00')" onmousedown="aumentarImagen('anadir621')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir621">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir621">
                     </div>
                 </div>
                 <div class="tipo">
                     Fanta Naranja
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Fanta Naranja', '2.00')" onmousedown="aumentarImagen('anadir622')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir622">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir622">
                     </div>
                 </div>
                 <div class="tipo">
                     Fanta Limón
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Fanta Limón', '2.00')" onmousedown="aumentarImagen('anadir623')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir623">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir623">
                     </div>
                 </div>
                 <div class="tipo">
                     Nestea
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Refresco', 'Nestea', '2.00')" onmousedown="aumentarImagen('anadir624')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir624">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir624">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-refresco" onclick="abrirTipos('tipos-refresco', 'abrir62', 'contenedor-boton-abrir-refresco')"
             onmousedown="aumentarImagen('abrir62')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir62">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir62">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1028,31 +1028,31 @@ VERSIÓN: 1.0
                 <div class="tipo">
                     Naranja
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Naranja', '1.50')" onmousedown="aumentarImagen('anadir631')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir631">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir631">
                     </div>
                 </div>
                 <div class="tipo">
                     Piña
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Piña', '1.50')" onmousedown="aumentarImagen('anadir632')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir632">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir632">
                     </div>
                 </div>
                 <div class="tipo">
                     Melocotón
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Melocotón', '1.50')" onmousedown="aumentarImagen('anadir633')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir633">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir633">
                     </div>
                 </div>
                 <div class="tipo">
                     Uva
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Zumo', 'Uva', '1.50')" onmousedown="aumentarImagen('anadir634')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir634">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir634">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-zumo" onclick="abrirTipos('tipos-zumo', 'abrir63', 'contenedor-boton-abrir-zumo')"
             onmousedown="aumentarImagen('abrir63')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir63">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir63">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1075,25 +1075,25 @@ VERSIÓN: 1.0
                 <div class="tipo">
                     Vainilla
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Batido', 'Vainilla', '1.75')" onmousedown="aumentarImagen('anadir641')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir641">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir641">
                     </div>
                 </div>
                 <div class="tipo">
                     Chocolate
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Batido', 'Chocolate', '1.75')" onmousedown="aumentarImagen('anadir642')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir642">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir642">
                     </div>
                 </div>
                 <div class="tipo">
                     Fresa
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Batido', 'Fresa', '1.75')" onmousedown="aumentarImagen('anadir643')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir643">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir643">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-batido" onclick="abrirTipos('tipos-batido', 'abrir64', 'contenedor-boton-abrir-batido')"
             onmousedown="aumentarImagen('abrir64')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir64">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir64">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1116,7 +1116,7 @@ VERSIÓN: 1.0
         
     <section class="helados" id="helados">
         <div class="titulo-seccion">
-            <img src="./images/helado.png" alt="Helado">
+            <img src="../img/carta/helado.png" alt="Helado">
             <span>Helados</span>
             <hr>
         </div>
@@ -1139,43 +1139,43 @@ VERSIÓN: 1.0
         <div class="tipo">
             Chocolate
             <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Chocolate', '2.50')" onmousedown="aumentarImagen('anadir711')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir711">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir711">
             </div>
         </div>
         <div class="tipo">
             Fresa
             <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Fresa', '2.50')" onmousedown="aumentarImagen('anadir712')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir712">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir712">
             </div>
         </div>
         <div class="tipo">
             Vainilla
             <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Vainilla', '2.50')" onmousedown="aumentarImagen('anadir713')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir713">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir713">
             </div>
         </div>
         <div class="tipo">
             Nata
             <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Nata', '2.50')" onmousedown="aumentarImagen('anadir714')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir714">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir714">
             </div>
         </div>
         <div class="tipo">
             Dulce de leche
             <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Dulce de leche', '2.50')" onmousedown="aumentarImagen('anadir715')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir715">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir715">
             </div>
         </div>
         <div class="tipo">
             Huevo kinder
             <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Huevo kinder', '2.50')" onmousedown="aumentarImagen('anadir716')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir716">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir716">
             </div>
         </div>
     </div>
     <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-1" onclick="abrirTipos('tipos-helados-1', 'abrir71', 'contenedor-boton-abrir-helado-1')"
     onmousedown="aumentarImagen('abrir71')">
-        <img src="./images/abrir.png" alt="Abrir" id="abrir71">
+        <img src="../img/carta/abrir.png" alt="Abrir" id="abrir71">
     </div>
 </div>
 <hr class="divisor-productos">
@@ -1198,43 +1198,43 @@ VERSIÓN: 1.0
                 <div class="tipo">
                     Chocolate
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Chocolate', '3.45')" onmousedown="aumentarImagen('anadir721')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir721">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir721">
                     </div>
                 </div>
                 <div class="tipo">
                     Fresa
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Fresa', '3.45')" onmousedown="aumentarImagen('anadir722')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir722">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir722">
                     </div>
                 </div>
                 <div class="tipo">
                     Vainilla
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Vainilla', '3.45')" onmousedown="aumentarImagen('anadir723')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir723">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir723">
                     </div>
                 </div>
                 <div class="tipo">
                     Nata
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Nata', '3.45')" onmousedown="aumentarImagen('anadir724')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir724">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir724">
                     </div>
                 </div>
                 <div class="tipo">
                     Dulce de leche
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Dulce de leche', '3.45')" onmousedown="aumentarImagen('anadir725')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir725">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir725">
                     </div>
                 </div>
                 <div class="tipo">
                     Huevo kinder
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho grande', 'Huevo kinder', '3.45')" onmousedown="aumentarImagen('anadir726')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir726">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir726">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-2" onclick="abrirTipos('tipos-helados-2', 'abrir72', 'contenedor-boton-abrir-helado-2')"
             onmousedown="aumentarImagen('abrir72')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir72">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir72">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1257,55 +1257,55 @@ VERSIÓN: 1.0
                 <div class="tipo">
                     Chocolate
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Chocolate', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir731')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir731">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir731">
                     </div>
                 </div>
                 <div class="tipo">
                     Fresa
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Fresa', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir732')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir732">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir732">
                     </div>
                 </div>
                 <div class="tipo">
                     Vainilla
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Vainilla', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir733')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir733">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir733">
                     </div>
                 </div>
                 <div class="tipo">
                     Nata
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Nata', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir734')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir734">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir734">
                     </div>
                 </div>
                 <div class="tipo">
                     Dulce de leche
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Dulce de leche', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir735')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir735">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir735">
                     </div>
                 </div>
                 <div class="tipo">
                     Huevo kinder
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado2Sabores('Huevo kinder', 'sabor-elegido-731', 'sabor-elegido-732')" onmousedown="aumentarImagen('anadir736')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir736">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir736">
                     </div>
                 </div>
                 <div class="sabores-elegidos">
                     <div class="futuros-sabores">
-                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor731" onclick="borrarSabor('sabor-elegido-731', 'quitarSabor731', 'anadir73')">Primer sabor: <span id="sabor-elegido-731"></span>
+                        <img src="../img/carta/quitar.png" alt="Quitar" id="quitarSabor731" onclick="borrarSabor('sabor-elegido-731', 'quitarSabor731', 'anadir73')">Primer sabor: <span id="sabor-elegido-731"></span>
                     </div>
                     <div class="futuros-sabores">
-                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor732" onclick="borrarSabor('sabor-elegido-732', 'quitarSabor732', 'anadir73')">Segundo sabor: <span id="sabor-elegido-732"></span>
+                        <img src="../img/carta/quitar.png" alt="Quitar" id="quitarSabor732" onclick="borrarSabor('sabor-elegido-732', 'quitarSabor732', 'anadir73')">Segundo sabor: <span id="sabor-elegido-732"></span>
                     </div>
                     <div class="añadir-helado" onclick="añadirHeladoDefinitivoVariosSabores('2', 'Helado Copa mediana', 'sabor-elegido-731', 'sabor-elegido-732', '', '2.75')"
                     onmousedown="aumentarImagen('anadir73')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir73">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir73">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-3" onclick="abrirTipos('tipos-helados-3', 'abrir73', 'contenedor-boton-abrir-helado-3')"
             onmousedown="aumentarImagen('abrir73')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir73">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir73">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1328,58 +1328,58 @@ VERSIÓN: 1.0
                 <div class="tipo">
                     Chocolate
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Chocolate', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir741')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir741">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir741">
                     </div>
                 </div>
                 <div class="tipo">
                     Fresa
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Fresa', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir742')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir742">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir742">
                     </div>
                 </div>
                 <div class="tipo">
                     Vainilla
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Vainilla', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir743')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir743">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir743">
                     </div>
                 </div>
                 <div class="tipo">
                     Nata
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Nata', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir744')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir744">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir744">
                     </div>
                 </div>
                 <div class="tipo">
                     Dulce de leche
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Dulce de leche', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir745')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir745">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir745">
                     </div>
                 </div>
                 <div class="tipo">
                     Huevo kinder
                     <div class="contenedor-boton-tipo" onclick="añadirSaborHelado3Sabores('Huevo kinder', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743')" onmousedown="aumentarImagen('anadir746')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir746">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir746">
                     </div>
                 </div>
                 <div class="sabores-elegidos">
                     <div class="futuros-sabores">
-                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor741" onclick="borrarSabor('sabor-elegido-741', 'quitarSabor741', 'anadir74')">Primer sabor: <span id="sabor-elegido-741"></span>
+                        <img src="../img/carta/quitar.png" alt="Quitar" id="quitarSabor741" onclick="borrarSabor('sabor-elegido-741', 'quitarSabor741', 'anadir74')">Primer sabor: <span id="sabor-elegido-741"></span>
                     </div>
                     <div class="futuros-sabores">
-                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor742" onclick="borrarSabor('sabor-elegido-742', 'quitarSabor742', 'anadir74')">Segundo sabor: <span id="sabor-elegido-742"></span>
+                        <img src="../img/carta/quitar.png" alt="Quitar" id="quitarSabor742" onclick="borrarSabor('sabor-elegido-742', 'quitarSabor742', 'anadir74')">Segundo sabor: <span id="sabor-elegido-742"></span>
                     </div>
                     <div class="futuros-sabores">
-                        <img src="./images/quitar.png" alt="Quitar" id="quitarSabor743" onclick="borrarSabor('sabor-elegido-743', 'quitarSabor743', 'anadir74')">Tercer sabor: <span id="sabor-elegido-743"></span>
+                        <img src="../img/carta/quitar.png" alt="Quitar" id="quitarSabor743" onclick="borrarSabor('sabor-elegido-743', 'quitarSabor743', 'anadir74')">Tercer sabor: <span id="sabor-elegido-743"></span>
                     </div>
                     <div class="añadir-helado" onclick="añadirHeladoDefinitivoVariosSabores('3', 'Helado Copa grande', 'sabor-elegido-741', 'sabor-elegido-742', 'sabor-elegido-743', '3.95')"
                     onmousedown="aumentarImagen('anadir74')">
-                        <img src="./images/anadir.png" alt="Añadir" id="anadir74">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir74">
                     </div>
                 </div>
             </div>
             <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-4" onclick="abrirTipos('tipos-helados-4', 'abrir74', 'contenedor-boton-abrir-helado-4')"
             onmousedown="aumentarImagen('abrir74')">
-                <img src="./images/abrir.png" alt="Abrir" id="abrir74">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir74">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1398,7 +1398,7 @@ VERSIÓN: 1.0
 
     <section class="cafes" id="cafes">
         <div class="titulo-seccion">
-            <img src="./images/cafe.png" alt="Café">
+            <img src="../img/carta/cafe.png" alt="Café">
             <span>Cafés</span>
             <hr>
         </div>
@@ -1418,7 +1418,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto81', '0.75', 'Café')" onmousedown="aumentarImagen('anadir81')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir81">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir81">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1438,7 +1438,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto82', '0.85', 'Café')" onmousedown="aumentarImagen('anadir82')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir82">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir82">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1458,7 +1458,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto83', '0.75', 'Café')" onmousedown="aumentarImagen('anadir83')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir83">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir83">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1478,7 +1478,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto84', '0.85', 'Café')" onmousedown="aumentarImagen('anadir84')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir84">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir84">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1498,7 +1498,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto85', '0.95', 'Café')" onmousedown="aumentarImagen('anadir85')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir85">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir85">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1518,7 +1518,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto86', '1.05', 'Café')" onmousedown="aumentarImagen('anadir86')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir86">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir86">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1533,7 +1533,7 @@ VERSIÓN: 1.0
 
     <section class="tartas" id="tartas">
         <div class="titulo-seccion">
-            <img src="./images/tarta.png" alt="Tarta">
+            <img src="../img/carta/tarta.png" alt="Tarta">
             <span>Tartas</span>
             <hr>
         </div>
@@ -1553,7 +1553,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto91', '3.75', 'Tarta')" onmousedown="aumentarImagen('anadir91')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir91">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir91">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1573,7 +1573,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto92', '3.95', 'Tarta')" onmousedown="aumentarImagen('anadir92')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir92">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir92">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1593,7 +1593,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto93', '3.05', 'Tarta')" onmousedown="aumentarImagen('anadir93')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir93">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir93">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1613,7 +1613,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto94', '3.65', 'Tarta')" onmousedown="aumentarImagen('anadir94')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir94">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir94">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1633,7 +1633,7 @@ VERSIÓN: 1.0
                 </div>
             </div>
             <div class="contenedor-boton" onclick="añadirProducto('producto95', '3.25', 'Tarta')" onmousedown="aumentarImagen('anadir95')">
-                <img src="./images/anadir.png" alt="Añadir" id="anadir95">
+                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir95">
             </div>
         </div>
         <hr class="divisor-productos">
@@ -1642,7 +1642,7 @@ VERSIÓN: 1.0
 
     <section class="pedido">
         <div class="titulo-seccion">
-            <img src="./images/pedido.png" alt="Pedido">
+            <img src="../img/carta/pedido.png" alt="Pedido">
             <span>Pedido</span>
             <hr>
         </div>
@@ -1666,18 +1666,18 @@ VERSIÓN: 1.0
         <div class="contenedor-social">
             <span>Puedes seguirnos en nuestras redes sociales</span>
             <div class="redes-sociales">
-                <img src="./images/instagram.png" alt="Instagram" onclick="location.href='https://www.instagram.com/'">
-                <img src="./images/twitter.png" alt="Twitter" onclick="location.href='https://www.twitter.com/'">
-                <img src="./images/facebook.png" alt="Facebook" onclick="location.href='https://www.facebook.com/'">
+                <img src="../img/instagram.png" alt="Instagram" onclick="location.href='https://www.instagram.com/'">
+                <img src="../img/twitter.png" alt="Twitter" onclick="location.href='https://www.twitter.com/'">
+                <img src="../img/facebook.png" alt="Facebook" onclick="location.href='https://www.facebook.com/'">
             </div>
             <span>También puedes valorarnos en Google y dejar una reseña</span> 
             <div class="redes-sociales">
-                <img src="./images/resena.png" alt="Reseña Google" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_esES881ES881&tbm=lcl&sxsrf=ALeKk01y6PZtuC0sT4fJKI3Su9v1vPd1mA:1614090053631&q=burger+king&spell=1&sa=X&ved=0ahUKEwiMuqCCmoDvAhVyxoUKHSaKCKwQBQgeKAA&biw=1920&bih=969&dpr=1#lrd=0xd604f5dd2128185:0xc31f3bc5370b701e,1,,,&rlfi=hd:;si:14060022279892070430,l,CgtidXJnZXIga2luZyIDiAEBSPDS3ezlgICACFoqCgtidXJnZXIga2luZxAAEAEYABgBIgtidXJnZXIga2luZyoGCAIQABABkgEUZmFzdF9mb29kX3Jlc3RhdXJhbnSqARMQASoPIgtidXJnZXIga2luZygO;mv:[[39.5289757,-0.31733649999999997],[39.4482092,-0.43154709999999996]]'">
+                <img src="../img/resena.png" alt="Reseña Google" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_esES881ES881&tbm=lcl&sxsrf=ALeKk01y6PZtuC0sT4fJKI3Su9v1vPd1mA:1614090053631&q=burger+king&spell=1&sa=X&ved=0ahUKEwiMuqCCmoDvAhVyxoUKHSaKCKwQBQgeKAA&biw=1920&bih=969&dpr=1#lrd=0xd604f5dd2128185:0xc31f3bc5370b701e,1,,,&rlfi=hd:;si:14060022279892070430,l,CgtidXJnZXIga2luZyIDiAEBSPDS3ezlgICACFoqCgtidXJnZXIga2luZxAAEAEYABgBIgtidXJnZXIga2luZyoGCAIQABABkgEUZmFzdF9mb29kX3Jlc3RhdXJhbnSqARMQASoPIgtidXJnZXIga2luZygO;mv:[[39.5289757,-0.31733649999999997],[39.4482092,-0.43154709999999996]]'">
             </div>
         </div>
 
     </section>
-	<script src="../js/scripts.js></script>
+	<script src="../js/scripts.js"></script>
 </body>
 
 </html>
