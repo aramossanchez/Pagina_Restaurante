@@ -51,3 +51,8 @@ body{
 iframe{
     width: 100%;
 }
+@media (max-width: 344px) {
+    .pedido h1{
+        font-size: 4em;
+    }
+}
