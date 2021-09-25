@@ -22,11 +22,27 @@ VERSIÓN: 1.0
             <img src="./images/flecha-arriba.png" alt="Flecha Arriba" onclick="location.href='#inicio'">
         </div>  
         <!-- -------------------------------- MENU DE ARRIBA -------------------------------- -->
-        <div class="row nav" >
-                <div class="col-6">
+        <!-- -------------------------------- MENU DE ARRIBA VERSION MOVIL -------------------------------- -->
+        <div id="menu-arriba-pantalla-pequeña" class="row nav text-center d-flex align-items-center justify-content-between">
+            <img src="./images/menu.png" alt="Boton para abrir menú" onclick="AbrirCerrarMenuArriba()">
+            <div class="col-12 text-center opcion-menu-movil">
+                <a href="./pages/carta.html">CARTA FAST FOOD!</a>
+            </div>
+            <div class="col-12 text-center opcion-menu-movil">
+                <a href="#locales">HAZ TU PEDIDO</a>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-around opcion-menu-movil">
+                <img class="img-nav opcion-menu-movil" src="./images/instagram.png" alt="Instagram">
+                <img class="img-nav opcion-menu-movil" src="./images/twitter.png" alt="Twitter">
+                <img class="img-nav opcion-menu-movil" src="./images/facebook.png" alt="Facebook">
+            </div>                
+        </div>
+        <!-- -------------------------------- MENU DE ARRIBA VERSION PC Y TABLET -------------------------------- -->
+        <div id="menu-arriba-pantalla-grande" class="row nav d-flex align-items-center justify-content-between">
+                <div class="col-2">
                     <img id="img-nav" src="./images/logo_inicio.png" alt="Logo">
                 </div>
-                <div class="col-6 redes-sociales d-flex align-items-center justify-content-end">
+                <div class="col-10 redes-sociales d-flex align-items-center justify-content-end">
                     <a href="./pages/carta.html">CARTA FAST FOOD!</a>
                     <a href="#locales">HAZ TU PEDIDO</a>
                     <img class="img-nav" src="./images/instagram.png" alt="Instagram">

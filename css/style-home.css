@@ -23,6 +23,12 @@ html,body{
 ---------------------------------------------MENÚ ARRIBA-------------------------------------------------------
 ***************************************************************************************************************
 ***************************************************************************************************************/
+#menu-arriba-pantalla-grande{
+    display: block;
+}
+#menu-arriba-pantalla-pequeña{
+    display: none !important;
+}
 .nav{
     background-color: var(--color-oscuro);
     font-family: 'Truculenta', sans-serif;
@@ -292,7 +298,36 @@ a button:hover{
 
 
 
-
+/**************************************************************************************************************
+--------------------------------------------MENÚ ARRIBA------------------------------------------------------
+***************************************************************************************************************/
+@media (max-width: 500px){
+    #menu-arriba-pantalla-pequeña{
+        display: block !important;
+        height: 3.5em;
+        transition: 0.3s;
+    }
+    #menu-arriba-pantalla-pequeña img{
+        width: 4em;
+    }
+    #menu-arriba-pantalla-pequeña .img-nav{
+        margin: 0;
+        background-color: var(--color-oscuro);
+        border: solid 0.1em var(--color-claro);
+        border-radius: 8em;
+        width: 2em;
+        cursor: pointer;
+    }
+    #menu-arriba-pantalla-pequeña a{
+        margin: 0;
+    }
+    #menu-arriba-pantalla-grande{
+        display: none !important;
+    }
+    .opcion-menu-movil{
+        transform: scaleX(0);
+    }
+}
 /**************************************************************************************************************
 --------------------------------------------PRESENTACION------------------------------------------------------
 ***************************************************************************************************************/
