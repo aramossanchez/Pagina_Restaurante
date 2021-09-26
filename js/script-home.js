@@ -1,3 +1,5 @@
+// AUTOR: Armando Ramos
+// VERSIÓN: 1.0 
 // DECLARACION DE VARIABLES
 var botonSubirArriba = document.getElementById("boton-subir-arriba");
 var logoArriba = document.getElementById("img-nav");

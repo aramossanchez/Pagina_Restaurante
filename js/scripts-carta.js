@@ -1,3 +1,5 @@
+// AUTOR: Armando Ramos
+// VERSIÓN: 1.0 
 // DECLARO VARIABLES
 var viendoEnlacesComidas = false;
 

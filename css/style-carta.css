@@ -405,6 +405,7 @@ section{
 .contenedor-boton-quitar-helado img{
     padding-top: 5%;
     width: 0.65em;
+    cursor:pointer;
 }
 
 .sabores-elegidos{
