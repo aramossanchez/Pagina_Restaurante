@@ -1,3 +1,4 @@
+// DECLARO VARIABLES
 var viendoEnlacesComidas = false;
 
 var viendoEnlacesBebidas = false;
@@ -10,6 +11,7 @@ var valorPedido = 0;
 
 var id = 1;
 
+// CONTROLA EL BOTON DE VER PEDIDO
 window.onclick = function aparecerBotonPedido() {
     if (articulosEnPedido===0) {
         document.getElementById("boton-revisar-pedido").style.opacity = 0;
@@ -24,7 +26,8 @@ window.onclick = function aparecerBotonPedido() {
     }
 }
 
-window.onscroll = function aparecerBotonArriba() {
+// CONTROLA ENLACES SUPERIORES Y BOTON DE SUBIR ARRIBA
+window.onscroll = function controlMenuArticulos() {
     document.getElementById("enlaces-comidas").style.top = "0";
     document.getElementById("enlaces-comidas").style.opacity = 0;
     document.getElementById("enlaces-comidas").style.transform = "scaleY(0)";
@@ -37,16 +40,9 @@ window.onscroll = function aparecerBotonArriba() {
     document.getElementById("enlaces-postres").style.opacity = 0;
     document.getElementById("enlaces-postres").style.transform = "scaleY(0)";
     viendoEnlacesPostres = false;
-    if(window.pageYOffset < 100){
-        document.getElementById("boton-subir-arriba").style.opacity = 0;
-        document.getElementById("boton-subir-arriba").style.transform = "scaleY(0)";
-    }
-    if(window.pageYOffset >= 100){
-        document.getElementById("boton-subir-arriba").style.opacity = 1;
-        document.getElementById("boton-subir-arriba").style.transform = "scaleY(1)";
-    }
 }
 
+// SIMULA PULSACION DE BOTON EN LAS IMAGENES DE AÑADIR PRODUCTO
 function aumentarImagen(imagen) {
     document.getElementById(imagen).style.transform="scale(1.2)";
     setTimeout(() => {
@@ -54,12 +50,13 @@ function aumentarImagen(imagen) {
     }, 150);
 }
 
+// AÑADE PRODUCTO A LA LISTA
 function añadirProducto(elemento, precio, tipo) {
     producto = document.getElementById(elemento).innerHTML;
     escribirProducto(producto, precio, tipo);
 }
 
-
+// CREA EL ARTICULO AÑADIDO EN LA PAGINA
 function escribirProducto(producto, precioProducto, tipo) {
     var pedido = document.getElementById('pedido').innerHTML;
     document.getElementById('pedido').innerHTML = pedido + 
@@ -80,6 +77,7 @@ function escribirProducto(producto, precioProducto, tipo) {
     id = id  + 1;
 }
 
+// CREA EL ARTICULO HELADO Y LO AÑADE EN LA PAGINA
 function añadirSaborHelado(tipo, sabor, precio) {
     var pedido = document.getElementById('pedido').innerHTML;
     document.getElementById('pedido').innerHTML = pedido + 
@@ -100,6 +98,7 @@ function añadirSaborHelado(tipo, sabor, precio) {
     id = id  + 1;
 }
 
+// CONTROLA LA CREACION DEL PRODUCTO HELADO
 function añadirSaborHelado2Sabores(sabor, id1, id2){
     var cambiarSabor = 0; 
     if (document.getElementById(id2).innerHTML==="") {
@@ -128,8 +127,7 @@ function añadirSaborHelado2Sabores(sabor, id1, id2){
     }
 }
 
-
-
+// CONTROLA LA CREACION DEL PRODUCTO HELADO
 function añadirSaborHelado3Sabores(sabor, id1, id2, id3){
     var cambiarSabor = 0;  
     if (document.getElementById(id3).innerHTML==="") {
@@ -166,6 +164,7 @@ function añadirSaborHelado3Sabores(sabor, id1, id2, id3){
     }
 }
 
+// CREA EL ARTICULO HELADO DE 3 SABORES Y LO AÑADE EN LA PAGINA
 function añadirHeladoDefinitivoVariosSabores(cantidad, tipo, id1, id2, id3, precio) {
     switch (cantidad) {
         case "2":
@@ -214,6 +213,7 @@ function añadirHeladoDefinitivoVariosSabores(cantidad, tipo, id1, id2, id3, pre
     
 }
 
+// QUITA PRECIO DEL TOTAL
 function restarPrecio(precio, id) {
     articulosEnPedido = articulosEnPedido - 1;
     valorPedido = parseFloat(valorPedido) - parseFloat(precio);
@@ -221,6 +221,7 @@ function restarPrecio(precio, id) {
     document.getElementById('pedido').removeChild(id);
 }
 
+// CONTROLA LA ACCION DE LOS BOTONES DE ENLACE A ARTICULOS
 function enlacesSuperiores(enlace) {
     switch (enlace) {
         case "comida":
@@ -305,6 +306,7 @@ function enlacesSuperiores(enlace) {
     
 }
 
+// CONTROLA LOS MENUS DESPLEGABLES DENTRO DE LAS SECCIONES DE ALIMENTOS
 function abrirTipos(id, imagen, contenedorImagen) {
     switch (document.getElementById(id).className) {
         case "tipos":
@@ -322,6 +324,7 @@ function abrirTipos(id, imagen, contenedorImagen) {
     }
 }
 
+// BORRAR SABOR DE LA ELECCION DE SABOR DE HELADOS
 function borrarSabor(id, boton, botonAñadir) {
     document.getElementById(id).innerHTML = "";
     document.getElementById(boton).style.opacity = 0;

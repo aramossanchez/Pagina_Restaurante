@@ -87,26 +87,32 @@ VERSIÓN: 1.0
             <div class="col-12 d-flex align-items-center justify-content-center contenido-sobre-foto-difuminada">
                 <h1>NUESTROS LOCALES</h1>
             </div>
-            <div class="row d-flex align-items-center justify-content-around contenido-sobre-foto-difuminada">
+            <form class="row d-flex align-items-center justify-content-around contenido-sobre-foto-difuminada" onclick="filtrarLocales(event.path[0].id)">
                 <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                    <a href=""><button class="reverse">TODOS</button></a>
+                    <input type="radio" name="locales" id="todos" checked>
+                    <label for="todos">TODOS</label>
                 </div>
                 <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                    <a href=""><button class="reverse">MADRID</button></a>
+                    <input type="radio" name="locales" id="madrid">
+                    <label for="madrid">MADRID</label>
                 </div>
                 <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                    <a href=""><button class="reverse">BARCELONA</button></a>
+                    <input type="radio" name="locales" id="barcelona">
+                    <label for="barcelona">BARCELONA</label>
                 </div>
                 <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                    <a href=""><button class="reverse">VALENCIA</button></a>
+                    <input type="radio" name="locales" id="valencia">
+                    <label for="valencia">VALENCIA</label>
                 </div>
                 <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                    <a href=""><button class="reverse">GALICIA</button></a>
+                    <input type="radio" name="locales" id="galicia">
+                    <label for="galicia">GALICIA</label>
                 </div>
                 <div class="col-4 col-md-2 d-flex align-items-center justify-content-center">
-                    <a href=""><button class="reverse">ALBACETE</button></a>
+                    <input type="radio" name="locales" id="albacete">
+                    <label for="albacete">ALBACETE</label>
                 </div>
-            </div>
+            </form>
             <div class="col-12 contenido-sobre-foto-difuminada lista-de-locales">
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="col-10 col-md-3 col-sm-4 local">

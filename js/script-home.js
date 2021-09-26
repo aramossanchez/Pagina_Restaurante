@@ -1,9 +1,11 @@
+// DECLARACION DE VARIABLES
 var botonSubirArriba = document.getElementById("boton-subir-arriba");
 var logoArriba = document.getElementById("img-nav");
 var menuArribaIMG = document.getElementsByClassName("img-nav");
 var menuArribaMovil = document.getElementById("menu-arriba-pantalla-pequeña");
 var opcionesMenuMovil = document.getElementsByClassName("opcion-menu-movil");
 var menuArribaMovilAbierto = false;
+var locales = document.getElementsByClassName("local");
 
 window.onscroll = function aparecerBotonArriba() {
     // FLECHA ARRIBA
@@ -34,6 +36,8 @@ window.onscroll = function aparecerBotonArriba() {
         }
     }
 };
+
+// CONTROLA MENU SUPERIOR VERSION MOVIL
 const AbrirCerrarMenuArriba = () =>{
     if (!menuArribaMovilAbierto) {
         menuArribaMovil.style.height = "14em";
@@ -47,5 +51,69 @@ const AbrirCerrarMenuArriba = () =>{
             opcionesMenuMovil[i].style.transform = "scaleX(0)";
         }
         menuArribaMovilAbierto = false;
+    }
+}
+
+// FILTRAMOS LOCALES
+const filtrarLocales = (e) =>{
+    switch (e) {
+        case "todos":
+            for (let i = 0; i < 10; i++) {
+                locales[i].classList.remove("local-oculto");
+            }
+            break;
+        case "madrid":
+            for (let i = 0; i < 10; i++) {
+                if (i < 3) {
+                    locales[i].classList.remove("local-oculto");  
+                }else{
+                    locales[i].classList.add("local-oculto");
+                }          
+            }
+            break;
+        case "barcelona":
+            for (let i = 0; i < 10; i++) {
+                if (i < 3) {
+                    locales[i].classList.add("local-oculto");
+                }
+                if (i >= 3 && i < 6) {
+                    locales[i].classList.remove("local-oculto");                  
+                }else{
+                    locales[i].classList.add("local-oculto");
+                }
+            }
+            break;
+        case "valencia":
+            for (let i = 0; i < 10; i++) {
+                if (i < 6) {
+                    locales[i].classList.add("local-oculto");
+                }
+                if (i >= 6 && i < 8) {
+                    locales[i].classList.remove("local-oculto");                  
+                }else{
+                    locales[i].classList.add("local-oculto");
+                }
+            }
+            break;
+        case "galicia":
+            for (let i = 0; i < 10; i++) {
+                if (i == 8) {
+                    locales[i].classList.remove("local-oculto");   
+                }else{
+                    locales[i].classList.add("local-oculto");
+                }
+            }
+            break;
+        case "albacete":
+        for (let i = 0; i < 10; i++) {
+            if (i == 9) {
+                locales[i].classList.remove("local-oculto");   
+            }else{
+                locales[i].classList.add("local-oculto");
+            }
+        }
+        break;
+        default:
+            break;
     }
 }

@@ -97,7 +97,10 @@ html,body{
     font-family: 'Truculenta', sans-serif;
     height: auto;
 }
-a button{
+input[type="radio"]{
+    display: none;
+}
+a button, label{
     border: 0px solid;
     padding: 0.3em 1em;
     margin-top: 2em;
@@ -106,8 +109,9 @@ a button{
     color: var(--color-claro);
     background-color: var(--color-oscuro);
     border: 0.1em solid var(--color-claro);
+    cursor: pointer;
 }
-a button:hover{
+a button:hover, label:hover, input:checked + label{
     color: var(--color-oscuro);
     background-color: var(--color-claro);
     border: 0.1em solid var(--color-oscuro);
@@ -238,6 +242,10 @@ a button:hover{
     box-shadow: 0px 0px 5px 2px var(--color-oscuro);
     transition: 0.3s;
     cursor: default;
+    transition: 0.5s;
+}
+.local-oculto{
+    display: none;
 }
 /**************************************************************************************************************
 --------------------------------------------MENSAJE GANCHO------------------------------------------------------
@@ -395,7 +403,7 @@ a button:hover{
 --------------------------------------------LOCALES------------------------------------------------------
 ***************************************************************************************************************/
 @media (max-width: 1021px){
-    #locales a button{
+    #locales a button, label{
         font-size: 1em;
     }  
 }
@@ -415,7 +423,7 @@ a button:hover{
     }
 }
 @media (max-width: 392px){
-    #locales a button{
+    #locales a button, label{
         font-size: 0.8em;
     }  
 }
