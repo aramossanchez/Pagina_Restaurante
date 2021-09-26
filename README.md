@@ -8,13 +8,10 @@
 
 * Diseño totalmente responsive para cualquier dispositivo.
 ***
-Versión portatil:
 ![Versión Laptop](screenshots/laptop-version.png)
 ***
-Versión tablet:
 ![Versión Tablet](screenshots/tablet-version.png)
 ***
-Versión móvil:
 ![Versión Smartphone](screenshots/smartphone-version.png)
 ***
 * Añadido de enlaces hacia diferentes partes de la página y hacia otras páginas del mismo sitio web.
