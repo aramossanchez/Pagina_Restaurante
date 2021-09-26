@@ -33,6 +33,7 @@ body{
     position: fixed;
     top: 0;
     background-color: #fffffad0;
+    z-index: -1;
 }
 .contenido-sobre-fondo-difuminado{
     z-index: 4;
@@ -113,6 +114,7 @@ body{
     border: solid 0.25em #FFFFFA;
     border-radius: 8em;
     width: 17.5%;
+    cursor: pointer;
 }
 
 .enlaces-principales{
@@ -252,6 +254,11 @@ body{
 --------------------------------------------CUERPO PAGINA------------------------------------------------------
 ***************************************************************************************************************
 ***************************************************************************************************************/
+
+
+/**************************************************************************************************************
+--------------------------------------------DISTINTAS SECCIONES------------------------------------------------------
+***************************************************************************************************************/
 section{
     display: flex;
     flex-direction: column;
@@ -302,7 +309,6 @@ section{
 .descripcion-producto{
     color: #80807D;
 }
-
 .tipos{
     font-size: 110%;
     display: flex;
@@ -311,12 +317,10 @@ section{
     height: 0;
     opacity:0;
 }
-
 .visible{
     opacity: 1;
     height: auto;
 }
-
 .tipo{
     position: relative;
     display: flex;
@@ -325,7 +329,9 @@ section{
     padding-top: 2.5%;
     width: 80%;
 }
-
+/**************************************************************************************************************
+--------------------------------------------BOTONES------------------------------------------------------
+***************************************************************************************************************/
 .contenedor-boton-tipo{
     position: absolute;
     top:28%;
@@ -391,14 +397,14 @@ section{
 
 .contenedor-boton-quitar-helado{
     position: absolute;
-    left: 2.5%;
+    top: 8%;
+    left: -6%;
     width: 80%;
-    height: 7%;
 }
 
 .contenedor-boton-quitar-helado img{
     padding-top: 5%;
-    width: 4%;
+    width: 0.65em;
 }
 
 .sabores-elegidos{

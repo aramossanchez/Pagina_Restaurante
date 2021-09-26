@@ -83,7 +83,7 @@ function escribirProducto(producto, precioProducto, tipo) {
 function añadirSaborHelado(tipo, sabor, precio) {
     var pedido = document.getElementById('pedido').innerHTML;
     document.getElementById('pedido').innerHTML = pedido + 
-    `<div id="pedido${ id }">
+    `<div id="pedido${ id }" class="articulo-pedido">
     <div class="contenedor-boton-quitar-helado" onclick="restarPrecio(${ precio },pedido${ id })">
         <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
     </div>
@@ -171,7 +171,7 @@ function añadirHeladoDefinitivoVariosSabores(cantidad, tipo, id1, id2, id3, pre
         case "2":
             var pedido = document.getElementById('pedido').innerHTML;
             document.getElementById('pedido').innerHTML = pedido + 
-            `<div id="pedido${ id }">
+            `<div id="pedido${ id }" class="articulo-pedido">
             <div class="contenedor-boton-quitar-helado" onclick="restarPrecio(${ precio },pedido${ id })">
                 <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
             </div>
@@ -191,7 +191,7 @@ function añadirHeladoDefinitivoVariosSabores(cantidad, tipo, id1, id2, id3, pre
         case "3":
             var pedido = document.getElementById('pedido').innerHTML;
             document.getElementById('pedido').innerHTML = pedido + 
-            `<div id="pedido${ id }">
+            `<div id="pedido${ id }" class="articulo-pedido">
             <div class="contenedor-boton-quitar-helado" onclick="restarPrecio(${ precio },pedido${ id })">
                 <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
             </div>
