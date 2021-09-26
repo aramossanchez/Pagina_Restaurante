@@ -33,6 +33,7 @@ Versión móvil:
 ***
 * Carta interactiva: podemos pinchar en el icono + de cada producto para añadirlo a la sección "Pedido". Se añadirá el producto y el precio, el cual se irá sumando al total del pedido. Existen productos los cuales no podremos añadir directamente, si no que necesitaremos desplegar un menú. Al añadir el primer producto aparecerá un botón, el cual al ser pulsado nos llevará directamente a ver los artículos añadidos. Cualquiera de estos artículos podrán ser eliminados de la sección "Pedido" pulsando el botón -.
 ***
-Si lo deseas, puedes escanear el siguiente código qr, para poder acceder a la carta directamente desde el móvil. ¡Es la manera óptima de visualizarlo!
-
+## Si lo deseas, puedes escanear el siguiente código qr, para poder acceder a la carta directamente desde el móvil. ¡Es la manera óptima de visualizarlo!
+***
 ![Código QR](screenshots/qr-carta.png)
+***
