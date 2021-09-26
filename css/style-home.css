@@ -103,12 +103,14 @@ a button{
     margin-top: 2em;
     font-size: 1.5em;
     transition: 0.3s;
-    border: 0.1em solid var(--color-oscuro);
-}
-a button:hover{
     color: var(--color-claro);
     background-color: var(--color-oscuro);
     border: 0.1em solid var(--color-claro);
+}
+a button:hover{
+    color: var(--color-oscuro);
+    background-color: var(--color-claro);
+    border: 0.1em solid var(--color-oscuro);
 }
 .reverse{
     color: var(--color-claro);
@@ -183,13 +185,14 @@ a button:hover{
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: auto;
 }
 #contacto h1{
     font-size: 5em;
     color: var(--color-claro);
     text-shadow: 0px 0px 9px var(--color-oscuro);
     text-align: center;
+    margin-top: 1em;
 }
 #contacto p{
     font-size: 1.5em;
@@ -197,6 +200,7 @@ a button:hover{
     background-color: var(--color-oscuro);
     color: var(--color-claro);
     text-align: center;
+    margin-bottom: 3em;
 }
 /**************************************************************************************************************
 --------------------------------------------LOCALES------------------------------------------------------
@@ -234,10 +238,6 @@ a button:hover{
     box-shadow: 0px 0px 5px 2px var(--color-oscuro);
     transition: 0.3s;
     cursor: default;
-}
-.local:hover{
-    color: var(--color-oscuro);
-    background-color: var(--color-claro);
 }
 /**************************************************************************************************************
 --------------------------------------------MENSAJE GANCHO------------------------------------------------------

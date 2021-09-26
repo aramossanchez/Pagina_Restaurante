@@ -9,15 +9,52 @@ VERSIÓN: 1.0
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="../img/carta/favicon.png">
 	<link rel="stylesheet" href="../css/style-carta.css">
-	<title>Restaurante Fast food!</title>
+    <link rel="stylesheet" href="./css/style-home.css">
+	<title>Restaurante Fast Food - Carta</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="fondo-difuminada"></div>
+    <div class="container-fluid">
+        <!-- -------------------------------- MENU DE ARRIBA -------------------------------- -->
+        <!-- -------------------------------- MENU DE ARRIBA VERSION MOVIL -------------------------------- -->
+        <div id="menu-arriba-pantalla-pequeña" class="row nav text-center d-flex align-items-center justify-content-between">
+            <img src="../img/menu.png" alt="Boton para abrir menú" onclick="AbrirCerrarMenuArriba()">
+            <div class="col-12 text-center opcion-menu-movil">
+                <a href="../index.html#locales">LOCALES</a>
+            </div>
+            <div class="col-12 text-center opcion-menu-movil">
+                <a href="../index.html">INICIO</a>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-around opcion-menu-movil">
+                <img class="img-nav opcion-menu-movil" src="../img/instagram.png" alt="Instagram">
+                <img class="img-nav opcion-menu-movil" src="../img/twitter.png" alt="Twitter">
+                <img class="img-nav opcion-menu-movil" src="../img/facebook.png" alt="Facebook">
+            </div>                
+        </div>
+        <!-- -------------------------------- MENU DE ARRIBA VERSION PC Y TABLET -------------------------------- -->
+        <div id="menu-arriba-pantalla-grande" class="row nav d-flex align-items-center justify-content-between">
+                <div class="col-2">
+                    <img id="img-nav" src="../img/logo_inicio.png" alt="Logo">
+                </div>
+                <div class="col-10 redesSociales d-flex align-items-center justify-content-end">
+                    <a href="../index.html#locales">LOCALES</a>
+                    <a href="../index.html">INICIO</a>
+                    <img class="img-nav" src="../img/instagram.png" alt="Instagram">
+                    <img class="img-nav" src="../img/twitter.png" alt="Twitter">
+                    <img class="img-nav" src="../img/facebook.png" alt="Facebook">
+                </div>
+        </div>
+    </div>
     <header class="contenido-sobre-fondo-difuminado">
         <div class="logo">
             <img src="../img/logo.png" alt="Logo" class="contenido-sobre-fondo-difuminado">
         </div>
+        <!-- -------------------------------- ENLACES PARA ACCEDER A LAS DIFERENTES SECCIONES -------------------------------- -->
         <div class="enlaces" id="inicio"> 
             
             <div class="enlaces-principales">
@@ -44,14 +81,14 @@ VERSIÓN: 1.0
             </div>
         </div>
     </header>
-
+        <!-- -------------------------------- BOTONES PARA IR ARRIBA Y VER PEDIDO -------------------------------- -->
     <div class="boton-subir-arriba" id="boton-subir-arriba">
         <img src="../img/flecha-arriba.png" alt="Flecha Arriba" onclick="location.href='#inicio'">
     </div>  
     <div class="boton-revisar-pedido" id="boton-revisar-pedido">
         <img src="../img/carta/boton-pedido.png" alt="Boton Pedido" onclick="location.href='#precio-total-pedido'">
     </div>  
-    
+        <!-- -------------------------------- BOCADILLOS -------------------------------- -->
     <section class="bocadillos" id="bocadillos">
         <div class="titulo-seccion">
             <img src="../img/carta/bocadillo.png" alt="Bocadillo">
@@ -259,25 +296,7 @@ VERSIÓN: 1.0
         </div>
         <hr class="divisor-productos">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- -------------------------------- PIZZAS -------------------------------- -->  
     <section class="pizzas" id="pizzas">
         <div class="titulo-seccion">
             <img src="../img/carta/pizza.png" alt="Pizza">
@@ -405,20 +424,7 @@ VERSIÓN: 1.0
         </div>
         <hr class="divisor-productos">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- -------------------------------- HAMBURGUESAS -------------------------------- -->
     <section class="hamburguesas" id="hamburguesas">
         <div class="titulo-seccion">
             <img src="../img/carta/hamburguesa.png" alt="Pizza">
@@ -566,18 +572,7 @@ VERSIÓN: 1.0
         </div>
         <hr class="divisor-productos">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- -------------------------------- CERVEZAS -------------------------------- -->
     <section class="cervezas" id="cervezas">
         <div class="titulo-seccion">
             <img src="../img/carta/cerveza.png" alt="Cerveza">
@@ -820,20 +815,7 @@ VERSIÓN: 1.0
         </div>
         <hr class="divisor-productos">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- -------------------------------- VINOS -------------------------------- -->
     <section class="vinos" id="vinos">
         <div class="titulo-seccion">
             <img src="../img/carta/vino.png" alt="Vino">
@@ -921,21 +903,7 @@ VERSIÓN: 1.0
         </div>
         <hr class="divisor-productos">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- -------------------------------- OTRAS BEBIDAS -------------------------------- -->
     <section class="otras-bebidas" id="otras-bebidas">
         <div class="titulo-seccion">
             <img src="../img/carta/otras-bebidas.png" alt="Otras Bebidas">
@@ -1098,22 +1066,7 @@ VERSIÓN: 1.0
         </div>
         <hr class="divisor-productos">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+        <!-- -------------------------------- HELADOS -------------------------------- -->
     <section class="helados" id="helados">
         <div class="titulo-seccion">
             <img src="../img/carta/helado.png" alt="Helado">
@@ -1121,64 +1074,64 @@ VERSIÓN: 1.0
             <hr>
         </div>
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-<div class="producto">
-    <div class="informacion-producto">
-        <div class="texto-producto">
-            <div class="titulo-producto" id="producto71">
-                Cucurucho mediano
+        <div class="producto">
+            <div class="informacion-producto">
+                <div class="texto-producto">
+                    <div class="titulo-producto" id="producto71">
+                        Cucurucho mediano
+                    </div>
+                    <div class="descripcion-producto">
+                        Un cucurucho mediano con una bola del sabor que quieras
+                    </div>
+                </div>
+                <div class="precio-producto">
+                    <span class="unidades">2.</span><span class="decimales">50€</span>
+                </div>
             </div>
-            <div class="descripcion-producto">
-                Un cucurucho mediano con una bola del sabor que quieras
+            <div class="tipos" id="tipos-helados-1">
+                <div class="tipo">
+                    Chocolate
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Chocolate', '2.50')" onmousedown="aumentarImagen('anadir711')">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir711">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Fresa
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Fresa', '2.50')" onmousedown="aumentarImagen('anadir712')">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir712">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Vainilla
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Vainilla', '2.50')" onmousedown="aumentarImagen('anadir713')">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir713">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Nata
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Nata', '2.50')" onmousedown="aumentarImagen('anadir714')">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir714">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Dulce de leche
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Dulce de leche', '2.50')" onmousedown="aumentarImagen('anadir715')">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir715">
+                    </div>
+                </div>
+                <div class="tipo">
+                    Huevo kinder
+                    <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Huevo kinder', '2.50')" onmousedown="aumentarImagen('anadir716')">
+                        <img src="../img/carta/anadir.png" alt="Añadir" id="anadir716">
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-1" onclick="abrirTipos('tipos-helados-1', 'abrir71', 'contenedor-boton-abrir-helado-1')"
+            onmousedown="aumentarImagen('abrir71')">
+                <img src="../img/carta/abrir.png" alt="Abrir" id="abrir71">
             </div>
         </div>
-        <div class="precio-producto">
-            <span class="unidades">2.</span><span class="decimales">50€</span>
-        </div>
-    </div>
-    <div class="tipos" id="tipos-helados-1">
-        <div class="tipo">
-            Chocolate
-            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Chocolate', '2.50')" onmousedown="aumentarImagen('anadir711')">
-                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir711">
-            </div>
-        </div>
-        <div class="tipo">
-            Fresa
-            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Fresa', '2.50')" onmousedown="aumentarImagen('anadir712')">
-                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir712">
-            </div>
-        </div>
-        <div class="tipo">
-            Vainilla
-            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Vainilla', '2.50')" onmousedown="aumentarImagen('anadir713')">
-                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir713">
-            </div>
-        </div>
-        <div class="tipo">
-            Nata
-            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Nata', '2.50')" onmousedown="aumentarImagen('anadir714')">
-                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir714">
-            </div>
-        </div>
-        <div class="tipo">
-            Dulce de leche
-            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Dulce de leche', '2.50')" onmousedown="aumentarImagen('anadir715')">
-                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir715">
-            </div>
-        </div>
-        <div class="tipo">
-            Huevo kinder
-            <div class="contenedor-boton-tipo" onclick="añadirSaborHelado('Helado Cucurucho mediano', 'Huevo kinder', '2.50')" onmousedown="aumentarImagen('anadir716')">
-                <img src="../img/carta/anadir.png" alt="Añadir" id="anadir716">
-            </div>
-        </div>
-    </div>
-    <div class="contenedor-boton-abrir" id="contenedor-boton-abrir-helado-1" onclick="abrirTipos('tipos-helados-1', 'abrir71', 'contenedor-boton-abrir-helado-1')"
-    onmousedown="aumentarImagen('abrir71')">
-        <img src="../img/carta/abrir.png" alt="Abrir" id="abrir71">
-    </div>
-</div>
-<hr class="divisor-productos">
+        <hr class="divisor-productos">
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <div class="producto">
             <div class="informacion-producto">
@@ -1384,18 +1337,7 @@ VERSIÓN: 1.0
         </div>
         <hr class="divisor-productos">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- -------------------------------- CAFÉS -------------------------------- -->
     <section class="cafes" id="cafes">
         <div class="titulo-seccion">
             <img src="../img/carta/cafe.png" alt="Café">
@@ -1528,9 +1470,7 @@ VERSIÓN: 1.0
 
 
     </section>
-
-
-
+        <!-- -------------------------------- TARTAS -------------------------------- -->
     <section class="tartas" id="tartas">
         <div class="titulo-seccion">
             <img src="../img/carta/tarta.png" alt="Tarta">
@@ -1639,7 +1579,7 @@ VERSIÓN: 1.0
         <hr class="divisor-productos">
 
     </section>
-
+        <!-- -------------------------------- PEDIDO -------------------------------- -->
     <section class="pedido">
         <div class="titulo-seccion">
             <img src="../img/carta/pedido.png" alt="Pedido">
@@ -1659,25 +1599,29 @@ VERSIÓN: 1.0
                 <hr>
         </div>
     </section>
-
-
-
-    <section class="redes">
-        <div class="contenedor-social">
-            <span>Puedes seguirnos en nuestras redes sociales</span>
-            <div class="redes-sociales">
-                <img src="../img/instagram.png" alt="Instagram" onclick="location.href='https://www.instagram.com/'">
-                <img src="../img/twitter.png" alt="Twitter" onclick="location.href='https://www.twitter.com/'">
-                <img src="../img/facebook.png" alt="Facebook" onclick="location.href='https://www.facebook.com/'">
+    <!-- -------------------------------- FOOTER -------------------------------- -->
+    <div class="container-fluid">
+        <div id="footer" class="row article">
+            <div class="col-6 d-flex flex-column align-items-center justify-content-around">
+                <p>No olvides visitar nuestras redes sociales</p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="../img/instagram.png" alt="Instagram">
+                    <img src="../img/twitter.png" alt="Twitter">
+                    <img src="../img/facebook.png" alt="Facebook">
+                </div>
             </div>
-            <span>También puedes valorarnos en Google y dejar una reseña</span> 
-            <div class="redes-sociales">
-                <img src="../img/resena.png" alt="Reseña Google" onclick="location.href='https://www.google.com/search?rlz=1C1CHBD_esES881ES881&tbm=lcl&sxsrf=ALeKk01y6PZtuC0sT4fJKI3Su9v1vPd1mA:1614090053631&q=burger+king&spell=1&sa=X&ved=0ahUKEwiMuqCCmoDvAhVyxoUKHSaKCKwQBQgeKAA&biw=1920&bih=969&dpr=1#lrd=0xd604f5dd2128185:0xc31f3bc5370b701e,1,,,&rlfi=hd:;si:14060022279892070430,l,CgtidXJnZXIga2luZyIDiAEBSPDS3ezlgICACFoqCgtidXJnZXIga2luZxAAEAEYABgBIgtidXJnZXIga2luZyoGCAIQABABkgEUZmFzdF9mb29kX3Jlc3RhdXJhbnSqARMQASoPIgtidXJnZXIga2luZygO;mv:[[39.5289757,-0.31733649999999997],[39.4482092,-0.43154709999999996]]'">
+            <div class="col-6 d-flex flex-column align-items-center justify-content-around">
+                <p>Y no puedes olvidar dejar una reseña en Google</p>
+                <p>¡NOS AYUDAS MUCHÍSIMO!</p>
+                <img src="../img/resena.png" alt="Google">
+            </div>
+            <div class="col-12 d-flex align-items-end justify-content-end">
+                <a href="">Aviso legal</a><a href="">Política de privacidad</a><a href="">Política de cookies</a>
             </div>
         </div>
-
-    </section>
-	<script src="../js/scripts.js"></script>
+    </div>
+	<script src="../js/scripts-carta.js"></script>
+    <script src="../js/script-home.js"></script>
 </body>
 
 </html>

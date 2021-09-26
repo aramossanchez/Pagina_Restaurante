@@ -65,7 +65,7 @@ function escribirProducto(producto, precioProducto, tipo) {
     document.getElementById('pedido').innerHTML = pedido + 
     `<div id="pedido${ id }">
     <div class="contenedor-boton-quitar" onclick="restarPrecio(${ precioProducto },pedido${ id })">
-        <img src="./images/quitar.png" alt="Quitar" id="quitar${ id }">
+        <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
     </div>
     <div class='pedido-individual' >
         <div>${ tipo } ${ producto }</div>
@@ -85,7 +85,7 @@ function añadirSaborHelado(tipo, sabor, precio) {
     document.getElementById('pedido').innerHTML = pedido + 
     `<div id="pedido${ id }">
     <div class="contenedor-boton-quitar-helado" onclick="restarPrecio(${ precio },pedido${ id })">
-        <img src="./images/quitar.png" alt="Quitar" id="quitar${ id }">
+        <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
     </div>
     <div class='pedido-individual' >
         <div>${ tipo } <br>(${ sabor })</div>
@@ -173,7 +173,7 @@ function añadirHeladoDefinitivoVariosSabores(cantidad, tipo, id1, id2, id3, pre
             document.getElementById('pedido').innerHTML = pedido + 
             `<div id="pedido${ id }">
             <div class="contenedor-boton-quitar-helado" onclick="restarPrecio(${ precio },pedido${ id })">
-                <img src="./images/quitar.png" alt="Quitar" id="quitar${ id }">
+                <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
             </div>
             <div class='pedido-individual' >
                 <div>${ tipo } <br>(${ document.getElementById(id1).innerHTML } + ${ document.getElementById(id2).innerHTML })</div>
@@ -193,7 +193,7 @@ function añadirHeladoDefinitivoVariosSabores(cantidad, tipo, id1, id2, id3, pre
             document.getElementById('pedido').innerHTML = pedido + 
             `<div id="pedido${ id }">
             <div class="contenedor-boton-quitar-helado" onclick="restarPrecio(${ precio },pedido${ id })">
-                <img src="./images/quitar.png" alt="Quitar" id="quitar${ id }">
+                <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
             </div>
             <div class='pedido-individual' >
                 <div>${ tipo } <br>(${ document.getElementById(id1).innerHTML } + ${ document.getElementById(id2).innerHTML } + ${ document.getElementById(id3).innerHTML })</div>

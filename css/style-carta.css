@@ -2,14 +2,20 @@
 AUTOR: Armando Ramos
 VERSIÓN: 1.0 
 */
+
+/* FUENTES GOOGLE */
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
+/* GENERAL */
 *{
     margin:0;
     padding: 0;
 }
-
+:root{
+    --color-claro: #FFFFFA;
+    --color-oscuro: #40403E;
+}   
 html,body{
     width: 100%;
     scroll-behavior: smooth;
@@ -30,6 +36,60 @@ body{
 }
 .contenido-sobre-fondo-difuminado{
     z-index: 4;
+}
+.article {
+    font-family: 'Truculenta', sans-serif;
+    height: auto;
+}
+/**************************************************************************************************************
+***************************************************************************************************************
+---------------------------------------------MENÚ ARRIBA-------------------------------------------------------
+***************************************************************************************************************
+***************************************************************************************************************/
+#menu-arriba-pantalla-grande{
+    display: block;
+}
+#menu-arriba-pantalla-pequeña{
+    display: none !important;
+}
+.nav{
+    background-color: var(--color-oscuro);
+    font-family: 'Truculenta', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0px 2px 10px 1px black;
+    border-radius: 0px 0px 1.75em 1.75em;
+}
+.nav img{
+    width: 6em;
+    margin: 0.5em;
+    transition: 0.3s;
+}
+.nav a, #footer a{
+    color: var(--color-claro);
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    transition: 0.3s;
+}
+.nav a:hover, #footer a:hover{
+    background-color: var(--color-claro);
+    color: var(--color-oscuro);
+    text-decoration: none;
+}
+
+.redesSociales img{
+    background-color: var(--color-oscuro);
+    border: solid 0.1em var(--color-claro);
+    border-radius: 8em;
+    width: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.redesSociales img:hover{
+    transform: scale(0.8);
 }
 .logo{
     display: flex;
@@ -131,7 +191,7 @@ body{
     border-radius: 8em;
     width: 15%;
     text-align: right;
-    z-index: 2;
+    z-index: 5;
     opacity: 0;
     transform: scaleY(0);
 }
@@ -152,7 +212,7 @@ body{
     border-radius: 8em;
     width: 15%;
     text-align: right;
-    z-index: 2;
+    z-index: 5;
     opacity: 0;
     transform: scaleY(0);
 }
@@ -166,9 +226,9 @@ body{
     animation-duration: 1s;
     animation-name: boton-pedido;
     animation-iteration-count: infinite;
-  }
+}
   
-  @keyframes boton-pedido {
+@keyframes boton-pedido {
     from {
         transform:scale(1)
     }
@@ -180,8 +240,12 @@ body{
     to {
         transform:scale(1)
     }
-  }
-
+}
+/**************************************************************************************************************
+***************************************************************************************************************
+--------------------------------------------CUERPO PAGINA------------------------------------------------------
+***************************************************************************************************************
+***************************************************************************************************************/
 section{
     display: flex;
     flex-direction: column;
@@ -303,7 +367,8 @@ section{
 
 .contenedor-boton-quitar{
     position: absolute;
-    left: 2.5%;
+    top: 3%;
+    left: -5.5%;
     width: 80%;
 }
 
@@ -367,7 +432,6 @@ section{
     background-color: #40403E;
     z-index: 4;
 }
-
 .pedido-sin-empezar{
     align-self: flex-start;
     padding-left: 10%;
@@ -390,10 +454,9 @@ section{
 }
 
 .lista-pedido hr {
-    height:1px;
+    height: 1px !important;
     border:0;
     border-top: 2px dotted #BFBFBB;
-    padding-bottom: 0.45em;
 }
 
 .precio-total-pedido{
@@ -423,32 +486,124 @@ section{
     border:0;
     background-color: #40403E;
 }
-
-.redes{
-    margin-top: 25%;
-    padding: 10% 0;
+/**************************************************************************************************************
+--------------------------------------------FOOTER------------------------------------------------------
+***************************************************************************************************************/
+#footer{
+    background-color: var(--color-oscuro);
+    height: 30vh;
+    font-size: 1.5em;
 }
-
-.contenedor-social{
+#footer p{
+    color: var(--color-claro);
+    margin: 0;
     text-align: center;
-    width: 80%;
 }
-
-.contenedor-social span{
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 140%;
+#footer a{
+    font-size: 0.7em;
+    margin: 0px 0.5em;
 }
-
-.redes-sociales{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.redes-sociales img{
-    background-color: #40403E;
-    border: solid 0.25em #FFFFFA;
+#footer img{
+    background-color: var(--color-oscuro);
+    border: solid 0.1em var(--color-claro);
     border-radius: 8em;
-    width: 17.5%;
-    margin: 10% 0;
+    width: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 1em;
+}
+#footer img:hover{
+    transform: scale(0.8);
+}
+/**************************************************************************************************************
+***************************************************************************************************************
+---------------------------------------------RESPONSIVE-------------------------------------------------------
+***************************************************************************************************************
+***************************************************************************************************************/
+
+/**************************************************************************************************************
+--------------------------------------------FLECHA PARA IR HACIA ARRIBA------------------------------------------------------
+***************************************************************************************************************/
+@media (max-width: 998px){
+    .boton-subir-arriba{
+        left: 90%;
+    }
+}
+@media (max-width: 497px){
+    .boton-subir-arriba{
+        left: 83%;
+    }
+}
+/**************************************************************************************************************
+--------------------------------------------MENÚ ARRIBA------------------------------------------------------
+***************************************************************************************************************/
+@media (max-width: 500px){
+    #menu-arriba-pantalla-pequeña{
+        display: block !important;
+        height: 3.5em;
+        transition: 0.3s;
+    }
+    #menu-arriba-pantalla-pequeña img{
+        width: 4em;
+    }
+    #menu-arriba-pantalla-pequeña .img-nav{
+        margin: 0;
+        background-color: var(--color-oscuro);
+        border: solid 0.1em var(--color-claro);
+        border-radius: 8em;
+        width: 3em;
+        cursor: pointer;
+    }
+    #menu-arriba-pantalla-pequeña .opcion-menu-movil{
+        margin-top: 0.75em;
+    }
+    #menu-arriba-pantalla-grande{
+        display: none !important;
+    }
+    .opcion-menu-movil{
+        transform: scaleX(0);
+    }
+}
+
+/**************************************************************************************************************
+--------------------------------------------ESTRUCTURA------------------------------------------------------
+***************************************************************************************************************/
+@media (min-width: 800px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    section{
+        width: 30%;
+        margin: 0;
+    }
+    .pedido{
+        align-self: flex-start;
+        justify-self: start;
+    }
+}
+/**************************************************************************************************************
+--------------------------------------------FOOTER------------------------------------------------------
+***************************************************************************************************************/
+@media (max-width: 859px) {
+    #footer{
+        font-size: 1em;
+        height: auto;
+    }
+    #footer img{
+        width: 1.5em;
+        margin: 0px 1em;
+    }
+}
+@media (max-width: 359px) {
+    #footer{
+        font-size: 0.8em;
+    }
+    #footer a{
+        font-size: 0.7em;
+        margin: 1em 0.5em;
+    }
 }
