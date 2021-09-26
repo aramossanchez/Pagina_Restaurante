@@ -63,7 +63,7 @@ function añadirProducto(elemento, precio, tipo) {
 function escribirProducto(producto, precioProducto, tipo) {
     var pedido = document.getElementById('pedido').innerHTML;
     document.getElementById('pedido').innerHTML = pedido + 
-    `<div id="pedido${ id }">
+    `<div id="pedido${ id }" class="articulo-pedido">
     <div class="contenedor-boton-quitar" onclick="restarPrecio(${ precioProducto },pedido${ id })">
         <img src="../img/carta/quitar.png" alt="Quitar" id="quitar${ id }">
     </div>

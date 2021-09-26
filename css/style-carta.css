@@ -101,7 +101,9 @@ body{
 .logo img{
     width: 50%;
 }
-
+/**************************************************************************************************************
+--------------------------------------------ENLACES COMIDA------------------------------------------------------
+***************************************************************************************************************/
 .enlaces{
     position: relative;
 }
@@ -182,18 +184,21 @@ body{
     margin-right: 2.5%;
     width: 15%;
 }
-
+/**************************************************************************************************************
+--------------------------------------------BOTÓN SUBIR ARRIBA Y PEDIDO------------------------------------------------------
+***************************************************************************************************************/
 .boton-subir-arriba{
     position: fixed;
     bottom: 15%;
     right: 2%;
     transition: 0.5s;
     border-radius: 8em;
-    width: 15%;
+    width: 3em;
     text-align: right;
     z-index: 5;
     opacity: 0;
     transform: scaleY(0);
+    cursor: pointer;
 }
 
 .boton-subir-arriba img{
@@ -201,7 +206,7 @@ body{
     border: solid 0.25em #FFFFFA;
     border-radius: 8em;
     padding: 0.5em;
-    width: 60%;
+    width: 3em;
 }
 
 .boton-revisar-pedido{
@@ -210,11 +215,12 @@ body{
     right: 2%;
     transition: 0.5s;
     border-radius: 8em;
-    width: 15%;
+    width: 3em;
     text-align: right;
     z-index: 5;
     opacity: 0;
     transform: scaleY(0);
+    cursor: pointer;
 }
 
 .boton-revisar-pedido img{
@@ -222,7 +228,7 @@ body{
     border: solid 0.25em #FFFFFA;
     border-radius: 8em;
     padding: 0.5em;
-    width: 60%;
+    width: 3em;
     animation-duration: 1s;
     animation-name: boton-pedido;
     animation-iteration-count: infinite;
@@ -326,6 +332,7 @@ section{
     left: -10%;
     height: 90%;
     width: 100%;
+    cursor:pointer;
 }
 
 .contenedor-boton-tipo img{
@@ -344,6 +351,7 @@ section{
     left: -10%;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .contenedor-boton-abrir img{
@@ -363,18 +371,22 @@ section{
     position: relative;
     top:15%;
     width: 5%;
+    cursor: pointer;
 }
-
+.articulo-pedido{
+    position: relative;
+}
 .contenedor-boton-quitar{
     position: absolute;
-    top: 3%;
-    left: -5.5%;
+    top: 8%;
+    left: -6%;
     width: 80%;
 }
 
 .contenedor-boton-quitar img{
     padding-top: 1.25%;
-    width: 4%;
+    width: 0.65em;
+    cursor: pointer;
 }
 
 .contenedor-boton-quitar-helado{
@@ -399,10 +411,11 @@ section{
 }
 
 .futuros-sabores img{
-    width: 5%;
+    width: 1em;
     padding-right: 2%;
     opacity:0;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .añadir-helado{
@@ -418,6 +431,7 @@ section{
     transition: 0.25s;
     transform: scaleY(0);
     opacity: 0;
+    cursor: pointer;
 }
 
 #anadir74{
@@ -432,6 +446,9 @@ section{
     background-color: #40403E;
     z-index: 4;
 }
+/**************************************************************************************************************
+--------------------------------------------PEDIDO------------------------------------------------------
+***************************************************************************************************************/
 .pedido-sin-empezar{
     align-self: flex-start;
     padding-left: 10%;
@@ -524,16 +541,9 @@ section{
 /**************************************************************************************************************
 --------------------------------------------FLECHA PARA IR HACIA ARRIBA------------------------------------------------------
 ***************************************************************************************************************/
-@media (max-width: 998px){
-    .boton-subir-arriba{
-        left: 90%;
-    }
-}
-@media (max-width: 497px){
-    .boton-subir-arriba{
-        left: 83%;
-    }
-}
+
+
+
 /**************************************************************************************************************
 --------------------------------------------MENÚ ARRIBA------------------------------------------------------
 ***************************************************************************************************************/
@@ -576,6 +586,10 @@ section{
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    
+    .logo{
+        display: none;
+    }
     section{
         width: 30%;
         margin: 0;
@@ -583,6 +597,89 @@ section{
     .pedido{
         align-self: flex-start;
         justify-self: start;
+    }
+    .enlaces{
+        width: 98vw;
+        position:relative;
+        height: auto;
+    }
+    
+    .enlaces img{
+        background-color: #40403E;
+        border: solid 0.25em #FFFFFA;
+        border-radius: 8em;
+        width: 5em;
+    }
+    
+    .enlaces-principales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5em 0em;
+    }
+    .enlaces-comidas{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 3em 0;
+        padding: 0 1em;
+        transition: 0.25s;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 5%;
+        transform: scaleY(0);
+        opacity:0;
+    }
+    .enlaces-comidas img{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-right: 2.5%;
+        width: 5em;
+    }
+    .enlaces-bebidas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 3em 0;
+        padding: 0 1em;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 40%;
+        transform: scaleY(0);
+        opacity:0;
+    }
+    
+    .enlaces-bebidas img{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-right: 2.5%;
+        width: 5em;
+    }
+    
+    .enlaces-postres{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 3em 0;
+        padding: 0 1.5em;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        transform: scaleY(0);
+        opacity:0;
+    }
+    
+    .enlaces-postres img{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-right: 2.5%;
+        width: 5em;
     }
 }
 /**************************************************************************************************************
