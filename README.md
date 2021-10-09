@@ -8,11 +8,11 @@
 
 * Diseño totalmente responsive para cualquier dispositivo.
 ***
-![Versión Laptop](screenshots/laptop-version.png)
+![Portfolio Carta](screenshots/portfolio-carta.png)
 ***
-![Versión Tablet](screenshots/tablet-version.png)
+![Portfolio Página](screenshots/portfolio-pagina.png)
 ***
-![Versión Smartphone](screenshots/smartphone-version.png)
+* Carta interactiva: podemos pinchar en el icono + de cada producto para añadirlo a la sección "Pedido". Se añadirá el producto y el precio, el cual se irá sumando al total del pedido. Existen productos los cuales no podremos añadir directamente, si no que necesitaremos desplegar un menú. Al añadir el primer producto aparecerá un botón, el cual al ser pulsado nos llevará directamente a ver los artículos añadidos. Cualquiera de estos artículos podrán ser eliminados de la sección "Pedido" pulsando el botón -.
 ***
 * Añadido de enlaces hacia diferentes partes de la página y hacia otras páginas del mismo sitio web.
 ***
@@ -27,8 +27,6 @@
 * Creación de filtro de búsqueda en la sección "Locales" de la página principal del sitio web.
 ***
 * Creación de una página por cada local existente. En dicha página se añade el horario y el teléfono del local, así como una foto del mismo y su ubicación.
-***
-* Carta interactiva: podemos pinchar en el icono + de cada producto para añadirlo a la sección "Pedido". Se añadirá el producto y el precio, el cual se irá sumando al total del pedido. Existen productos los cuales no podremos añadir directamente, si no que necesitaremos desplegar un menú. Al añadir el primer producto aparecerá un botón, el cual al ser pulsado nos llevará directamente a ver los artículos añadidos. Cualquiera de estos artículos podrán ser eliminados de la sección "Pedido" pulsando el botón -.
 ***
 ## Si lo deseas, puedes escanear el siguiente código qr, para poder acceder a la carta directamente desde el móvil. ¡Es la manera óptima de visualizarlo!
 
